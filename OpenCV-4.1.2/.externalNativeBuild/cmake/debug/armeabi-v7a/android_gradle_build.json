@@ -1,0 +1,40 @@
+{
+  "stringTable": {
+    "0": "/home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/home/vox/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
+    "/home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/libcxx_helper/CMakeLists.txt",
+    "/home/vox/Android/Sdk/ndk-bundle/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "opencv_jni_shared-Debug-armeabi-v7a": {
+      "buildCommand": "/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a --target opencv_jni_shared",
+      "buildType": "debug",
+      "toolchain": "2007645236",
+      "abi": "armeabi-v7a",
+      "artifactName": "opencv_jni_shared",
+      "files": [
+        {
+          "src": "/home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/libcxx_helper/dummy.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "/home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/libopencv_jni_shared.a"
+    }
+  },
+  "toolchains": {
+    "2007645236": {
+      "cppCompilerExecutable": "/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

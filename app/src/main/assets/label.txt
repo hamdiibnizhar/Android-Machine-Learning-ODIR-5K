@@ -1,0 +1,8 @@
+Normal
+Diabetes
+Glaucoma
+Cataract
+AMD
+Hypertension
+Myopia
+Other Diseases/Abnormalities
