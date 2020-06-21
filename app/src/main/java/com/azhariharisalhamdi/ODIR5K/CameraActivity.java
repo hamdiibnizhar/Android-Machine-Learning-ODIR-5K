@@ -20,6 +20,7 @@ import android.Manifest;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.hardware.Camera;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
@@ -52,9 +53,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import java.nio.ByteBuffer;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.opencv.android.OpenCVLoader;
+import org.opencv.android.Utils;
+import org.opencv.core.Core;
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+import org.opencv.imgproc.CLAHE;
+import org.opencv.imgproc.Imgproc;
+
 import com.azhariharisalhamdi.ODIR5K.env.ImageUtils;
 import com.azhariharisalhamdi.ODIR5K.env.Logger;
 import com.azhariharisalhamdi.ODIR5K.tflite.Classifier.Device;
@@ -100,7 +110,9 @@ public abstract class CameraActivity extends AppCompatActivity
       recognition2TextView,
       recognitionValueTextView,
       recognition1ValueTextView,
-      recognition2ValueTextView;
+      recognition2ValueTextView,
+      resultRecognitionTextView,
+      caseRecognitionType;
   protected TextView frameValueTextView,
       cropValueTextView,
       cameraResolutionTextView,
@@ -115,6 +127,10 @@ public abstract class CameraActivity extends AppCompatActivity
   private Model model = Model.MULTI_LABEL_MODEL;
   private Device device = Device.CPU;
   private int numThreads = -1;
+
+  private Bitmap mrgbBitmap;
+
+  String resultRecognition;
 
   @Override
   protected void onCreate(final Bundle savedInstanceState) {
@@ -193,6 +209,8 @@ public abstract class CameraActivity extends AppCompatActivity
     recognition1ValueTextView = findViewById(R.id.detected_item1_value);
     recognition2TextView = findViewById(R.id.detected_item2);
     recognition2ValueTextView = findViewById(R.id.detected_item2_value);
+    resultRecognitionTextView = findViewById(R.id.resultText);
+    caseRecognitionType = findViewById(R.id.case_transform);
 
     frameValueTextView = findViewById(R.id.frame_info);
     cropValueTextView = findViewById(R.id.crop_info);
@@ -256,6 +274,12 @@ public abstract class CameraActivity extends AppCompatActivity
           @Override
           public void run() {
             ImageUtils.convertYUV420SPToARGB8888(bytes, previewWidth, previewHeight, rgbBytes);
+            if(Model.MULTI_LABEL_MODEL == getModel()) {
+              mrgbBitmap = Bitmap.createBitmap(previewWidth, previewHeight, Bitmap.Config.ARGB_8888);
+              mrgbBitmap.setPixels(rgbBytes, 0, previewWidth, 0, 0, previewWidth, previewHeight);
+              mrgbBitmap = processCLAHE(mrgbBitmap);
+              mrgbBitmap.getPixels(rgbBytes, 0, previewWidth, 0, 0, previewWidth, previewHeight);
+            }
           }
         };
 
@@ -268,6 +292,36 @@ public abstract class CameraActivity extends AppCompatActivity
           }
         };
     processImage();
+  }
+
+  public Bitmap processCLAHE(Bitmap mbitmap){
+    int w = mbitmap.getWidth();
+    int h = mbitmap.getHeight();
+    Mat mMat = new Mat(w,h, CvType.CV_8UC3);
+    Mat labImage = new Mat(w,h, CvType.CV_8UC3);
+//    Bitmap tempBitmap = new Bitmap(mbitmap);
+    Bitmap tempBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+    Utils.bitmapToMat(mbitmap, mMat);
+
+    Imgproc.cvtColor(mMat, labImage, Imgproc.COLOR_BGR2Lab,3);
+
+    java.util.List<Mat> Lab = new ArrayList<Mat>();
+
+    Core.split(labImage,Lab);
+    Mat L = Lab.get(0); // L,a,b are references, not copies
+    Mat a = Lab.get(1);
+    Mat b = Lab.get(2);
+
+    CLAHE ce = Imgproc.createCLAHE();
+    ce.setClipLimit(20);
+    ce.setTilesGridSize(new org.opencv.core.Size(10, 10));
+    ce.apply(L, L);
+
+    Core.merge(new ArrayList<>(Arrays.asList(L, a, b)),labImage);
+    Imgproc.cvtColor(labImage,mMat,Imgproc.COLOR_Lab2BGR);
+    Imgproc.cvtColor(mMat,mMat,Imgproc.COLOR_BGR2RGB);
+    Utils.matToBitmap(mMat, tempBitmap);
+    return tempBitmap;
   }
 
   /** Callback for Camera2 API */
@@ -313,6 +367,12 @@ public abstract class CameraActivity extends AppCompatActivity
                   uvRowStride,
                   uvPixelStride,
                   rgbBytes);
+              if(Model.MULTI_LABEL_MODEL == getModel()) {
+                mrgbBitmap = Bitmap.createBitmap(previewWidth, previewHeight, Bitmap.Config.ARGB_8888);
+                mrgbBitmap.setPixels(rgbBytes, 0, previewWidth, 0, 0, previewWidth, previewHeight);
+                mrgbBitmap = processCLAHE(mrgbBitmap);
+                mrgbBitmap.getPixels(rgbBytes, 0, previewWidth, 0, 0, previewWidth, previewHeight);
+              }
             }
           };
 
@@ -537,13 +597,17 @@ public abstract class CameraActivity extends AppCompatActivity
 
   @UiThread
   protected void showResultsInBottomSheet(List<Recognition> results) {
-    if (results != null && results.size() >= 3) {
+
+    if(Model.MULTI_LABEL_MODEL == getModel()) caseRecognitionType.setText("Multiple Case Diagnosis Prediction");
+    else caseRecognitionType.setText("Single Case Diagnosis Prediction");
+
+    if (results != null && results.size() >= 1) {
       Recognition recognition = results.get(0);
       if (recognition != null) {
         if (recognition.getTitle() != null) recognitionTextView.setText(recognition.getTitle());
         if (recognition.getConfidence() != null)
           recognitionValueTextView.setText(
-              String.format("%.2f", (100 * recognition.getConfidence())) + "%");
+              String.format("%.5f", (100 * recognition.getConfidence())) + "%");
       }
 
       Recognition recognition1 = results.get(1);
@@ -551,7 +615,7 @@ public abstract class CameraActivity extends AppCompatActivity
         if (recognition1.getTitle() != null) recognition1TextView.setText(recognition1.getTitle());
         if (recognition1.getConfidence() != null)
           recognition1ValueTextView.setText(
-              String.format("%.2f", (100 * recognition1.getConfidence())) + "%");
+              String.format("%.5f", (100 * recognition1.getConfidence())) + "%");
       }
 
       Recognition recognition2 = results.get(2);
@@ -559,8 +623,108 @@ public abstract class CameraActivity extends AppCompatActivity
         if (recognition2.getTitle() != null) recognition2TextView.setText(recognition2.getTitle());
         if (recognition2.getConfidence() != null)
           recognition2ValueTextView.setText(
-              String.format("%.2f", (100 * recognition2.getConfidence())) + "%");
+              String.format("%.5f", (100 * recognition2.getConfidence())) + "%");
       }
+    }
+
+
+    if(Model.MULTI_CLASS_MODEL == getModel()) {
+      resultRecognition = "";
+      if (results != null && results.size() >= 1) {
+        Recognition recognition = results.get(0);
+        if (recognition != null) {
+          if (recognition.getTitle() != null) resultRecognition = recognition.getTitle();
+          if (recognition.getConfidence() != null)
+            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition.getConfidence())) + "%";
+        }
+//        Recognition recognition1 = results.get(1);
+//        if (recognition1 != null) {
+//          resultRecognition = resultRecognition + "\n";
+//          if (recognition1.getTitle() != null)
+//            resultRecognition = resultRecognition + recognition1.getTitle();
+//          if (recognition1.getConfidence() != null)
+//            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition1.getConfidence())) + "%";
+//        }
+//        Recognition recognition2 = results.get(2);
+//        if (recognition2 != null) {
+//          resultRecognition = resultRecognition + "\n";
+//          if (recognition2.getTitle() != null)
+//            resultRecognition = resultRecognition + recognition2.getTitle();
+//          if (recognition2.getConfidence() != null)
+//            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition2.getConfidence())) + "%";
+//        }
+      }
+      resultRecognitionTextView.setText(resultRecognition);
+    }
+//      else {
+    if (Model.MULTI_LABEL_MODEL == getModel()) {
+      resultRecognition = "";
+      if (results != null && results.size() >= 3) {
+        Recognition recognition = results.get(0);
+        if (recognition != null && recognition.getConfidence() > 0.5) {
+          if (recognition.getTitle() != null) resultRecognition = recognition.getTitle();
+          if (recognition.getConfidence() != null)
+            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition.getConfidence())) + "%";
+        }
+        Recognition recognition1 = results.get(1);
+        if (recognition1 != null && recognition1.getConfidence() > 0.5) {
+          resultRecognition = resultRecognition + "\n";
+          if (recognition1.getTitle() != null)
+            resultRecognition = resultRecognition + recognition1.getTitle();
+          if (recognition1.getConfidence() != null)
+            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition1.getConfidence())) + "%";
+        }
+        Recognition recognition2 = results.get(2);
+        if (recognition2 != null && recognition2.getConfidence() > 0.5) {
+          resultRecognition = resultRecognition + "\n";
+          if (recognition2.getTitle() != null)
+            resultRecognition = resultRecognition + recognition2.getTitle();
+          if (recognition2.getConfidence() != null)
+            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition2.getConfidence())) + "%";
+        }
+        Recognition recognition3 = results.get(3);
+        if (recognition3 != null && recognition3.getConfidence() > 0.5) {
+          resultRecognition = resultRecognition + "\n";
+          if (recognition3.getTitle() != null)
+            resultRecognition = resultRecognition + recognition3.getTitle();
+          if (recognition3.getConfidence() != null)
+            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition3.getConfidence())) + "%";
+        }
+        Recognition recognition4 = results.get(4);
+        if (recognition4 != null && recognition4.getConfidence() > 0.5) {
+          resultRecognition = resultRecognition + "\n";
+          if (recognition4.getTitle() != null)
+            resultRecognition = resultRecognition + recognition4.getTitle();
+          if (recognition4.getConfidence() != null)
+            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition4.getConfidence())) + "%";
+        }
+        Recognition recognition5 = results.get(5);
+        if (recognition5 != null && recognition5.getConfidence() > 0.5) {
+          resultRecognition = resultRecognition + "\n";
+          if (recognition5.getTitle() != null)
+            resultRecognition = resultRecognition + recognition5.getTitle();
+          if (recognition5.getConfidence() != null)
+            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition5.getConfidence())) + "%";
+        }
+        Recognition recognition6 = results.get(6);
+        if (recognition6 != null && recognition6.getConfidence() > 0.5) {
+          resultRecognition = resultRecognition + "\n";
+          if (recognition6.getTitle() != null)
+            resultRecognition = resultRecognition + recognition6.getTitle();
+          if (recognition6.getConfidence() != null)
+            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition6.getConfidence())) + "%";
+        }
+        Recognition recognition7 = results.get(7);
+        if (recognition7 != null && recognition7.getConfidence() > 0.5) {
+          resultRecognition = resultRecognition + "\n";
+          if (recognition7.getTitle() != null)
+            resultRecognition = resultRecognition + recognition7.getTitle();
+          if (recognition7.getConfidence() != null)
+            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition7.getConfidence())) + "%";
+        }
+      }
+      if(resultRecognition == "") {resultRecognition = "No Diagnosis Prediction";}
+      resultRecognitionTextView.setText(resultRecognition);
     }
   }
 

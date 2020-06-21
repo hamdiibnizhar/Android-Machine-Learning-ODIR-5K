@@ -1,18 +1,18 @@
 {
   "buildFiles": [
     "/home/vox/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
-    "/home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/libcxx_helper/CMakeLists.txt",
+    "/home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/libcxx_helper/CMakeLists.txt",
     "/home/vox/Android/Sdk/ndk-bundle/build/cmake/platforms.cmake"
   ],
   "cleanCommands": [
-    "/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86 --target clean"
+    "/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86 --target clean"
   ],
   "libraries": {
     "opencv_jni_shared-Debug-x86": {
       "artifactName": "opencv_jni_shared",
-      "buildCommand": "/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86 --target opencv_jni_shared",
+      "buildCommand": "/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86 --target opencv_jni_shared",
       "abi": "x86",
-      "output": "/home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/libopencv_jni_shared.a"
+      "output": "/home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/libopencv_jni_shared.a"
     }
   }
 }

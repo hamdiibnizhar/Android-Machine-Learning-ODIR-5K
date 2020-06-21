@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="fatal" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4e847cde-6ee3-4519-a086-3412eab0db60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_rules_1_1_0_alpha3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_0_alpha3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_auto_value_auto_value_annotations_1_6_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_3_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_28_1_android_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_truth_truth_1_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_googlecode_java_diff_utils_diffutils_1_3_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_compat_qual_2_5_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_18_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_0_0_0_nightly_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_gpu_0_0_0_nightly_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_support_0_0_0_nightly_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_buttom_sheet_custom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/cmake_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/cmake_server_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_server_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/armeabi-v7a/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/cmake_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/cmake_server_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/cmake_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/cmake_server_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/cmake_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/cmake_server_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/cmake_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/cmake_server_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/armeabi-v7a/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/cmake_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/cmake_server_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/cmake_server_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/cmake_server_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/release/x86_64/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/generated/source/aidl/debug/org/opencv/engine/OpenCVEngineInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/build/generated/source/aidl/debug/org/opencv/engine/OpenCVEngineInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/incremental/compileDebugAidl/dependency.store" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/incremental/compileDebugAidl/dependency.store" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV-4.1.2/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_eye.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_eye_tree_eyeglasses.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_frontalcatface.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_frontalcatface_extended.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_frontalface_alt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_frontalface_alt2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_frontalface_alt_tree.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_frontalface_default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_fullbody.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_lefteye_2splits.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_licence_plate_rus_16stages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_lowerbody.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_profileface.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_righteye_2splits.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_russian_plate_number.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_smile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/haarcascades/haarcascade_upperbody.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/lbpcascades/lbpcascade_frontalcatface.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/lbpcascades/lbpcascade_frontalface.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/lbpcascades/lbpcascade_frontalface_improved.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/lbpcascades/lbpcascade_profileface.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/lbpcascades/lbpcascade_silverware.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/SoftFloat-COPYING.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/cpufeatures-LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/cpufeatures-README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/ippicv-EULA.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/ippicv-readme.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/ippiw-EULA.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/ippiw-support.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/ippiw-third-party-programs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/ittnotify-LICENSE.BSD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/ittnotify-LICENSE.GPL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/jasper-LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/jasper-README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/jasper-copyright" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/libjpeg-turbo-LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/libjpeg-turbo-README.ijg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/libjpeg-turbo-README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/libpng-LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/libpng-README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/libtiff-COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/openexr-AUTHORS.ilmbase" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/openexr-AUTHORS.openexr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/openexr-LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/protobuf-LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/protobuf-README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/quirc-LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/tbb-LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/licenses/tbb-README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/valgrind.supp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/etc/valgrind_3rdparty.supp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/arm64-v8a/libIlmImf.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/arm64-v8a/libcpufeatures.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/arm64-v8a/libittnotify.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/arm64-v8a/liblibjasper.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/arm64-v8a/liblibjpeg-turbo.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/arm64-v8a/liblibpng.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/arm64-v8a/liblibprotobuf.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/arm64-v8a/liblibtiff.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/arm64-v8a/liblibwebp.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/arm64-v8a/libquirc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/arm64-v8a/libtbb.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/arm64-v8a/libtegra_hal.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/armeabi-v7a/libIlmImf.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/armeabi-v7a/libcpufeatures.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/armeabi-v7a/libittnotify.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/armeabi-v7a/liblibjasper.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/armeabi-v7a/liblibjpeg-turbo.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/armeabi-v7a/liblibpng.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/armeabi-v7a/liblibprotobuf.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/armeabi-v7a/liblibtiff.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/armeabi-v7a/liblibwebp.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/armeabi-v7a/libquirc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/armeabi-v7a/libtbb.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/3rdparty/libs/armeabi-v7a/libtegra_hal.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/OpenCV-arm64-v8a.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/OpenCV-armeabi-v7a.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/OpenCV-x86.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/OpenCV-x86_64.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/OpenCV.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/OpenCVConfig-version.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/OpenCVConfig.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-arm64-v8a/OpenCVConfig-version.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-arm64-v8a/OpenCVConfig.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-arm64-v8a/OpenCVModules-release.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-arm64-v8a/OpenCVModules.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-armeabi-v7a/OpenCVConfig-version.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-armeabi-v7a/OpenCVConfig.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-armeabi-v7a/OpenCVModules-release.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-armeabi-v7a/OpenCVModules.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-x86/OpenCVConfig-version.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-x86/OpenCVConfig.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-x86/OpenCVModules-release.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-x86/OpenCVModules.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-x86_64/OpenCVConfig-version.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-x86_64/OpenCVConfig.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-x86_64/OpenCVModules-release.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/abi-x86_64/OpenCVModules.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/android.toolchain.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/calib3d.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/calib3d/calib3d.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/calib3d/calib3d_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/affine.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/async.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/base.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/bindings_utils.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/bufferpool.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/check.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/core.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/core_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda.inl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/block.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/border_interpolate.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/color.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/common.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/datamov_utils.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/detail/color_detail.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/detail/reduce.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/detail/reduce_key_val.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/detail/transform_detail.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/detail/type_traits_detail.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/detail/vec_distance_detail.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/dynamic_smem.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/emulation.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/filters.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/funcattrib.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/functional.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/limits.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/reduce.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/saturate_cast.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/scan.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/simd_functions.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/transform.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/type_traits.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/utility.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/vec_distance.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/vec_math.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/vec_traits.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/warp.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/warp_reduce.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda/warp_shuffle.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda_stream_accessor.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cuda_types.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cv_cpu_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cv_cpu_helper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cvdef.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cvstd.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cvstd.inl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/cvstd_wrapper.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/detail/async_promise.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/detail/exception_ptr.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/directx.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/eigen.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/fast_math.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/hal.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/interface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/intrin.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/intrin_avx.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/intrin_avx512.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/intrin_cpp.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/intrin_forward.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/intrin_msa.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/intrin_neon.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/intrin_sse.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/intrin_sse_em.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/intrin_vsx.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/intrin_wasm.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/hal/msa_macros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/mat.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/mat.inl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/matx.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/neon_utils.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/ocl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/ocl_genbase.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/ocl_defs.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/opencl_info.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/opencl_svm.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/autogenerated/opencl_clamdblas.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/autogenerated/opencl_clamdfft.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/autogenerated/opencl_core.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/autogenerated/opencl_core_wrappers.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/autogenerated/opencl_gl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/autogenerated/opencl_gl_wrappers.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/opencl_clamdblas.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/opencl_clamdfft.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/opencl_core.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/opencl_core_wrappers.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/opencl_gl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/opencl_gl_wrappers.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/opencl_svm_20.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/opencl_svm_definitions.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opencl/runtime/opencl_svm_hsa_extension.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/opengl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/operations.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/optim.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/ovx.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/persistence.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/saturate.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/simd_intrinsics.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/softfloat.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/sse_utils.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/traits.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/types.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/types_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/utility.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/utils/allocator_stats.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/utils/allocator_stats.impl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/utils/filesystem.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/utils/logger.defines.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/utils/logger.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/utils/logtag.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/utils/trace.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/va_intel.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/version.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/core/vsx_utils.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/cvconfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/dnn.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/dnn/all_layers.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/dnn/dict.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/dnn/dnn.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/dnn/dnn.inl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/dnn/layer.details.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/dnn/layer.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/dnn/shape_utils.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/dnn/utils/inference_engine.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/dnn/version.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/features2d.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/features2d/features2d.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/features2d/hal/interface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/all_indices.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/allocator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/any.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/autotuned_index.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/composite_index.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/defines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/dist.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/dummy.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/dynamic_bitset.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/flann.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/flann_base.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/general.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/ground_truth.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/hdf5.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/heap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/hierarchical_clustering_index.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/index_testing.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/kdtree_index.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/kdtree_single_index.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/kmeans_index.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/linear_index.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/logger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/lsh_index.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/lsh_table.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/matrix.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/miniflann.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/nn_index.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/object_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/params.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/random.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/result_set.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/sampling.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/saving.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/simplex_downhill.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/flann/timer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/highgui.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/highgui/highgui.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/highgui/highgui_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/imgcodecs.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/imgcodecs/imgcodecs.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/imgcodecs/imgcodecs_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/imgcodecs/ios.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/imgcodecs/legacy/constants_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/imgproc.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/imgproc/detail/gcgraph.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/imgproc/hal/hal.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/imgproc/hal/interface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/imgproc/imgproc.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/imgproc/imgproc_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/imgproc/types_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/ml.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/ml/ml.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/ml/ml.inl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/objdetect.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/objdetect/detection_based_tracker.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/objdetect/objdetect.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/opencv.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/opencv_modules.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/photo.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/photo/cuda.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/photo/legacy/constants_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/photo/photo.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/detail/autocalib.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/detail/blenders.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/detail/camera.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/detail/exposure_compensate.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/detail/matchers.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/detail/motion_estimators.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/detail/seam_finders.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/detail/timelapsers.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/detail/util.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/detail/util_inl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/detail/warpers.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/detail/warpers_inl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/stitching/warpers.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/video.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/video/background_segm.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/video/legacy/constants_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/video/tracking.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/video/video.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/videoio.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/videoio/cap_ios.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/videoio/legacy/constants_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/videoio/registry.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/videoio/videoio.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/jni/include/opencv2/videoio/videoio_c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/libs/arm64-v8a/libopencv_java4.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/libs/armeabi-v7a/libopencv_java4.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_calib3d.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_core.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_dnn.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_features2d.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_flann.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_highgui.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_imgcodecs.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_imgproc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_ml.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_objdetect.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_photo.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_stitching.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_video.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/arm64-v8a/libopencv_videoio.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_calib3d.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_core.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_dnn.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_features2d.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_flann.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_highgui.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_imgcodecs.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_imgproc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_ml.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_objdetect.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_photo.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_stitching.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_video.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/native/staticlibs/armeabi-v7a/libopencv_videoio.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/efficientnet-lite0-fp32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/efficientnet-lite0-int8.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/mobilenet_v1_1.0_224.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/mobilenet_v1_1.0_224_info.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/mobilenet_v1_1.0_224_quant.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/mobilenet_v1_1.0_224_quant_info.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/CameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/CameraActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/ClassifierActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/ClassifierActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/Classifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/Classifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tfe_ic_activity_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tfe_ic_activity_camera.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="PLEGAR1781006229" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/Classifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/CameraActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="632" column="51" lean-forward="true" selection-start-line="632" selection-start-column="51" selection-end-line="632" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#26994#26995#0" expanded="true" />
+                <element signature="e#27089#27090#0" expanded="true" />
+                <element signature="e#27301#27302#0" expanded="true" />
+                <element signature="e#27465#27466#0" expanded="true" />
+                <element signature="e#27715#27716#0" expanded="true" />
+                <element signature="e#28219#28220#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/ClassifierActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="105" column="43" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_buttom_sheet_custom.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+              <folding>
+                <element signature="e#7129#7151#0" expanded="true" />
+                <element signature="e#7540#7562#0" expanded="true" />
+                <element signature="e#7924#7947#0" expanded="true" />
+                <element signature="e#8338#8361#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tfe_ic_layout_bottom_sheet.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mobilenet_v1</find>
+      <find>tfe_ic_la</find>
+      <find>readyForNextImage</find>
+      <find>onImageAvailable</find>
+      <find>processImage</find>
+      <find>getRgbBytes</find>
+      <find>F</find>
+      <find>rgbBytes</find>
+      <find>loadImage</find>
+      <find>imageConverter</find>
+      <find>recognitionTextView</find>
+      <find>getModel</find>
+      <find>recognizeImage</find>
+      <find>rgbFrameBitmap</find>
+      <find>outputProbabilityBuffer</find>
+      <find>3</find>
+      <find>MAX_RESULTS</find>
+      <find>showResultsInBottomSheet</find>
+    </findStrings>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/../keypad/ODIR-5K.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/ClassifierActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/tfe_ic_activity_camera.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/Classifier.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_buttom_sheet_custom.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/CameraActivity.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="25" />
+    <option name="width" value="1920" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Android-Machine-Learning-ODIR-5K" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="Android-Machine-Learning-ODIR-5K" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Android-Machine-Learning-ODIR-5K" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="ODIR5K" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Android-Machine-Learning-ODIR-5K" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="Android-Machine-Learning-ODIR-5K" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e847cde-6ee3-4519-a086-3412eab0db60" name="Default Changelist" comment="" />
+      <created>1592712089603</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592712089603</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" visible="true" weight="0.20042644" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Run" weight="0.32975295" />
+      <window_info active="true" anchor="bottom" id="Logcat" visible="true" weight="0.32975295" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Find" />
+      <window_info anchor="bottom" id="Debug" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.32975295" />
+      <window_info anchor="bottom" id="Android Profiler" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Flutter Inspector" />
+      <window_info anchor="right" id="Preview" />
+      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tfe_ic_activity_camera.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/download.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tfe_ic_layout_bottom_sheet.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/ClassifierActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="105" column="43" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/Classifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_buttom_sheet_custom.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+          <folding>
+            <element signature="e#7129#7151#0" expanded="true" />
+            <element signature="e#7540#7562#0" expanded="true" />
+            <element signature="e#7924#7947#0" expanded="true" />
+            <element signature="e#8338#8361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/CameraActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="632" column="51" lean-forward="true" selection-start-line="632" selection-start-column="51" selection-end-line="632" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#26994#26995#0" expanded="true" />
+            <element signature="e#27089#27090#0" expanded="true" />
+            <element signature="e#27301#27302#0" expanded="true" />
+            <element signature="e#27465#27466#0" expanded="true" />
+            <element signature="e#27715#27716#0" expanded="true" />
+            <element signature="e#28219#28220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

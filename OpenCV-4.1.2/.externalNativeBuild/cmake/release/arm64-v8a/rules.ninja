@@ -42,7 +42,7 @@ rule CXX_STATIC_LIBRARY_LINKER__opencv_jni_shared
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/cmake -H/home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/libcxx_helper -B/home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a
+  command = /home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/cmake -H/home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/libcxx_helper -B/home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a
   description = Re-running CMake...
   generator = 1
 

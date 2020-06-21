@@ -1,19 +1,19 @@
 The target system is: Android - 1 - x86_64
 The host system is: Linux - 4.15.0-106-generic - x86_64
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_148c7"
-[1/2] Building C object CMakeFiles/cmTC_148c7.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_148c7
+Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_945c5"
+[1/2] Building C object CMakeFiles/cmTC_945c5.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_945c5
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_26013"
-[1/2] Building C object CMakeFiles/cmTC_26013.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_26013
+Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_36007"
+[1/2] Building C object CMakeFiles/cmTC_36007.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_36007
 Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
 Target: x86_64-none-linux-android21
 Thread model: posix
@@ -24,16 +24,16 @@ Selected GCC installation: /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/preb
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
 Found CUDA installation: /usr/local/cuda-10.0, version 10.0
- "/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_26013 /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/8.0.7/lib/linux/x86_64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_26013.dir/CMakeCCompilerABI.c.o -L. -L/home/vox/Libraries/caffe/caffe_source/lib -L/home/vox/Libraries/pytorch/build/lib -L/home/vox/Libraries/openpose/install/lib -lgcc -ldl -lc -lgcc -ldl /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o
+ "/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_36007 /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/8.0.7/lib/linux/x86_64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_36007.dir/CMakeCCompilerABI.c.o -L. -L/home/vox/Libraries/caffe/caffe_source/lib -L/home/vox/Libraries/pytorch/build/lib -L/home/vox/Libraries/openpose/install/lib -lgcc -ldl -lc -lgcc -ldl /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-linux-android-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_26013"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_26013.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_26013]
+  ignore line: [Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_36007"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_36007.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_36007]
   ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
   ignore line: [Target: x86_64-none-linux-android21]
   ignore line: [Thread model: posix]
@@ -46,7 +46,7 @@ Parsed C implicit link information from above output:
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
   ignore line: [Found CUDA installation: /usr/local/cuda-10.0, version 10.0]
-  link line: [ "/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_26013 /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/8.0.7/lib/linux/x86_64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_26013.dir/CMakeCCompilerABI.c.o -L. -L/home/vox/Libraries/caffe/caffe_source/lib -L/home/vox/Libraries/pytorch/build/lib -L/home/vox/Libraries/openpose/install/lib -lgcc -ldl -lc -lgcc -ldl /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o]
+  link line: [ "/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_36007 /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/8.0.7/lib/linux/x86_64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_36007.dir/CMakeCCompilerABI.c.o -L. -L/home/vox/Libraries/caffe/caffe_source/lib -L/home/vox/Libraries/pytorch/build/lib -L/home/vox/Libraries/openpose/install/lib -lgcc -ldl -lc -lgcc -ldl /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o]
     arg [/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld] ==> ignore
     arg [--sysroot=/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
@@ -61,7 +61,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_26013] ==> ignore
+    arg [cmTC_36007] ==> ignore
     arg [/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o] ==> ignore
     arg [-L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/8.0.7/lib/linux/x86_64] ==> dir [/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/8.0.7/lib/linux/x86_64]
     arg [-L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x] ==> dir [/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
@@ -80,7 +80,7 @@ Parsed C implicit link information from above output:
     arg [--no-undefined] ==> ignore
     arg [-znoexecstack] ==> ignore
     arg [--gc-sections] ==> ignore
-    arg [CMakeFiles/cmTC_26013.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_36007.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-L.] ==> ignore
     arg [-L/home/vox/Libraries/caffe/caffe_source/lib] ==> dir [/home/vox/Libraries/caffe/caffe_source/lib]
     arg [-L/home/vox/Libraries/pytorch/build/lib] ==> dir [/home/vox/Libraries/pytorch/build/lib]
@@ -109,11 +109,11 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_ab074"
-[1/2] Building C object CMakeFiles/cmTC_ab074.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_ab074
+Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_0fccf"
+[1/2] Building C object CMakeFiles/cmTC_0fccf.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_0fccf
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -123,11 +123,11 @@ Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_a
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_b451d"
-[1/2] Building C object CMakeFiles/cmTC_b451d.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_b451d
+Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_9d17e"
+[1/2] Building C object CMakeFiles/cmTC_9d17e.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_9d17e
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -137,11 +137,11 @@ Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_b
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_3d331"
-[1/2] Building C object CMakeFiles/cmTC_3d331.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_3d331
+Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_744d7"
+[1/2] Building C object CMakeFiles/cmTC_744d7.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_744d7
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -149,19 +149,19 @@ Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_3
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_8fb92"
-[1/2] Building CXX object CMakeFiles/cmTC_8fb92.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_8fb92
+Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_04085"
+[1/2] Building CXX object CMakeFiles/cmTC_04085.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_04085
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_09fa7"
-[1/2] Building CXX object CMakeFiles/cmTC_09fa7.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_09fa7
+Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_01947"
+[1/2] Building CXX object CMakeFiles/cmTC_01947.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_01947
 Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
 Target: x86_64-none-linux-android21
 Thread model: posix
@@ -172,16 +172,16 @@ Selected GCC installation: /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/preb
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
 Found CUDA installation: /usr/local/cuda-10.0, version 10.0
- "/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_09fa7 /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/8.0.7/lib/linux/x86_64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_09fa7.dir/CMakeCXXCompilerABI.cpp.o -L. -L/home/vox/Libraries/caffe/caffe_source/lib -L/home/vox/Libraries/pytorch/build/lib -L/home/vox/Libraries/openpose/install/lib -lc++ -lm -lgcc -ldl -lc -lgcc -ldl /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o
+ "/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_01947 /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/8.0.7/lib/linux/x86_64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_01947.dir/CMakeCXXCompilerABI.cpp.o -L. -L/home/vox/Libraries/caffe/caffe_source/lib -L/home/vox/Libraries/pytorch/build/lib -L/home/vox/Libraries/openpose/install/lib -lc++ -lm -lgcc -ldl -lc -lgcc -ldl /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-linux-android-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_09fa7"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_09fa7.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_09fa7]
+  ignore line: [Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_01947"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_01947.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_01947]
   ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
   ignore line: [Target: x86_64-none-linux-android21]
   ignore line: [Thread model: posix]
@@ -194,7 +194,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
   ignore line: [Found CUDA installation: /usr/local/cuda-10.0, version 10.0]
-  link line: [ "/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_09fa7 /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/8.0.7/lib/linux/x86_64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_09fa7.dir/CMakeCXXCompilerABI.cpp.o -L. -L/home/vox/Libraries/caffe/caffe_source/lib -L/home/vox/Libraries/pytorch/build/lib -L/home/vox/Libraries/openpose/install/lib -lc++ -lm -lgcc -ldl -lc -lgcc -ldl /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o]
+  link line: [ "/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_01947 /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/8.0.7/lib/linux/x86_64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21 -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_01947.dir/CMakeCXXCompilerABI.cpp.o -L. -L/home/vox/Libraries/caffe/caffe_source/lib -L/home/vox/Libraries/pytorch/build/lib -L/home/vox/Libraries/openpose/install/lib -lc++ -lm -lgcc -ldl -lc -lgcc -ldl /home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o]
     arg [/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld] ==> ignore
     arg [--sysroot=/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
@@ -209,7 +209,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_09fa7] ==> ignore
+    arg [cmTC_01947] ==> ignore
     arg [/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o] ==> ignore
     arg [-L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/8.0.7/lib/linux/x86_64] ==> dir [/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/8.0.7/lib/linux/x86_64]
     arg [-L/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x] ==> dir [/home/vox/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
@@ -228,7 +228,7 @@ Parsed CXX implicit link information from above output:
     arg [--no-undefined] ==> ignore
     arg [-znoexecstack] ==> ignore
     arg [--gc-sections] ==> ignore
-    arg [CMakeFiles/cmTC_09fa7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_01947.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-L.] ==> ignore
     arg [-L/home/vox/Libraries/caffe/caffe_source/lib] ==> dir [/home/vox/Libraries/caffe/caffe_source/lib]
     arg [-L/home/vox/Libraries/pytorch/build/lib] ==> dir [/home/vox/Libraries/pytorch/build/lib]
@@ -259,11 +259,11 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_cc15d"
-[1/2] Building CXX object CMakeFiles/cmTC_cc15d.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_cc15d
+Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_25bd2"
+[1/2] Building CXX object CMakeFiles/cmTC_25bd2.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_25bd2
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -326,11 +326,11 @@ Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_c
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_0854f"
-[1/2] Building CXX object CMakeFiles/cmTC_0854f.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_0854f
+Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_5d0fa"
+[1/2] Building CXX object CMakeFiles/cmTC_5d0fa.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_5d0fa
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -393,11 +393,11 @@ Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_0
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_7bbce"
-[1/2] Building CXX object CMakeFiles/cmTC_7bbce.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_7bbce
+Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_d3841"
+[1/2] Building CXX object CMakeFiles/cmTC_d3841.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_d3841
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -460,11 +460,11 @@ Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_7
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/vox/Projects/Machine-Learning/ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_118f0"
-[1/2] Building CXX object CMakeFiles/cmTC_118f0.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_118f0
+Run Build Command:"/home/vox/Android/Sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_1e00f"
+[1/2] Building CXX object CMakeFiles/cmTC_1e00f.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_1e00f
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

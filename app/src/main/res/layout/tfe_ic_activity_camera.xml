@@ -14,12 +14,14 @@
  limitations under the License.
 -->
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00000000">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#00000000"
@@ -31,12 +33,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/black"
-            tools:context="com.azhariharisalhamdi.ODIR5K.CameraActivity" />
+            tools:context="com.azhariharisalhamdi.ODIR5K.CameraActivity">
+
+        </FrameLayout>
 
 
     </RelativeLayout>
 
     <include
         android:id="@+id/bottom_sheet_layout"
-        layout="@layout/tfe_ic_layout_bottom_sheet" />
+        layout="@layout/layout_buttom_sheet_custom" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
