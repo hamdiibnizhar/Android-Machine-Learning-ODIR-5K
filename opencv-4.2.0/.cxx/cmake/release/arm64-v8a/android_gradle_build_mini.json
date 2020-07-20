@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "C:\\Users\\vox\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\vox\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147\\build\\cmake\\platforms.cmake",
+    "F:\\Projects\\Android\\Android-Machine-Learning-ODIR-5K\\opencv-4.2.0\\libcxx_helper\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\vox\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Projects\\Android\\Android-Machine-Learning-ODIR-5K\\opencv-4.2.0\\.cxx\\cmake\\release\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\vox\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"F:\\Projects\\Android\\Android-Machine-Learning-ODIR-5K\\opencv-4.2.0\\.cxx\\cmake\\release\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "opencv_jni_shared-Release-arm64-v8a": {
+      "artifactName": "opencv_jni_shared",
+      "buildCommand": "C:\\Users\\vox\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Projects\\Android\\Android-Machine-Learning-ODIR-5K\\opencv-4.2.0\\.cxx\\cmake\\release\\arm64-v8a\" opencv_jni_shared",
+      "abi": "arm64-v8a",
+      "output": "F:\\Projects\\Android\\Android-Machine-Learning-ODIR-5K\\opencv-4.2.0\\.cxx\\cmake\\release\\arm64-v8a\\libopencv_jni_shared.a"
+    }
+  }
+}

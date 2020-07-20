@@ -1,0 +1,2 @@
+ninja: Entering directory `F:\Projects\Android\Android-Machine-Learning-ODIR-5K\opencv-4.2.0\.cxx\cmake\debug\armeabi-v7a'
+ninja: no work to do.

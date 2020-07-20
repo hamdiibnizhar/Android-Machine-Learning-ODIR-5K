@@ -1,0 +1,7 @@
+Executable : C:\Users\vox\AppData\Local\Android\sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+F:\Projects\Android\Android-Machine-Learning-ODIR-5K\opencv-4.2.0\.cxx\cmake\release\armeabi-v7a
+opencv_jni_shared
+jvmArgs : 
+

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "F:/Projects/Android/Android-Machine-Learning-ODIR-5K/opencv-4.2.0/.cxx/cmake/debug/armeabi-v7a",
+  "command": "C:\\Users\\vox\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi21 --gcc-toolchain=C:/Users/vox/AppData/Local/Android/sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/vox/AppData/Local/Android/sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\opencv_jni_shared.dir\\dummy.cpp.o -c F:\\Projects\\Android\\Android-Machine-Learning-ODIR-5K\\opencv-4.2.0\\libcxx_helper\\dummy.cpp",
+  "file": "F:\\Projects\\Android\\Android-Machine-Learning-ODIR-5K\\opencv-4.2.0\\libcxx_helper\\dummy.cpp"
+}
+]

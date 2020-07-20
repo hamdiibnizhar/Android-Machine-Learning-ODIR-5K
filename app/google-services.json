@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "297021306027",
+    "firebase_url": "https://odir-5k.firebaseio.com",
+    "project_id": "odir-5k",
+    "storage_bucket": "odir-5k.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297021306027:android:2c130b1f67b98158a233ee",
+        "android_client_info": {
+          "package_name": "com.azhariharisalhamdi.ODIR5K"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297021306027-5d13cunigjsla4kj7keoer1abnic3jor.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArXYIh0eY2A_ESpo7W-2MMyO30QCWaTZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297021306027-5d13cunigjsla4kj7keoer1abnic3jor.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
