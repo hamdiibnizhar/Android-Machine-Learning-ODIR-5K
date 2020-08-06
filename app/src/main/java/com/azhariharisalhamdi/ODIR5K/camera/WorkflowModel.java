@@ -138,6 +138,10 @@ public class WorkflowModel extends AndroidViewModel implements SearchResultListe
         new SearchedObject(getContext().getResources(), confirmedObject, products, result));
   }
 
+  @Override
+  public void onSearchCompleted(List<Product> products, String result) {
+  }
+
   private Context getContext() {
     return getApplication().getApplicationContext();
   }

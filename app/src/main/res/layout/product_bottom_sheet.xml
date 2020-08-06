@@ -2,9 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_bg"
     android:orientation="vertical">
+
+  <ImageView
+      android:id="@+id/bottom_sheet_arrow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:src="@drawable/icn_chevron_up" />
 
   <TextView
       android:id="@+id/bottom_sheet_title"
@@ -14,9 +21,9 @@
       android:layout_marginTop="10dp"
       android:layout_marginRight="10dp"
       android:gravity="left"
-      android:textSize="16sp"
       android:text="@string/diagnosis_predictions"
-      android:textColor="@color/black" />
+      android:textColor="@color/black"
+      android:textSize="16sp" />
 
   <TextView
       android:id="@+id/diagnosis_prediction"
@@ -25,20 +32,20 @@
       android:layout_margin="@dimen/bottom_sheet_title_margin"
       android:ellipsize="end"
       android:fontFamily="sans-serif"
-      android:textAlignment="center"
       android:maxLines="3"
+      android:textAlignment="center"
       android:textColor="@color/black"
-      android:textSize="@dimen/bottom_sheet_title_size"/>
+      android:textSize="@dimen/bottom_sheet_title_size" />
 
   <View
       android:layout_width="match_parent"
       android:layout_height="@dimen/divider_height"
-      android:background="@color/lighter_grey"/>
+      android:background="@color/lighter_grey" />
 
   <androidx.recyclerview.widget.RecyclerView
       android:id="@+id/product_recycler_view"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:scrollbars="vertical"/>
+      android:scrollbars="vertical" />
 
 </LinearLayout>

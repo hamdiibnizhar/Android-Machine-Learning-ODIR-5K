@@ -38,13 +38,16 @@ public class BottomSheetScrimView extends View {
   private final Paint scrimPaint;
   private final Paint thumbnailPaint;
   private final Paint boxPaint;
-  private final int thumbnailHeight;
+  private int thumbnailHeight;
   private final int thumbnailMargin;
   private final int boxCornerRadius;
 
   private Bitmap thumbnailBitmap;
   private RectF thumbnailRect;
   private float downPercentInCollapsed;
+
+  private boolean use_scaling = false;
+  float thumbnailWidth;
 
   public BottomSheetScrimView(Context context, AttributeSet attrs) {
     super(context, attrs);
@@ -84,8 +87,12 @@ public class BottomSheetScrimView extends View {
           collapsedStateHeight + (bottomSheet.getHeight() - collapsedStateHeight) * slideOffset;
     }
 
-    float thumbnailWidth =
-        (float) thumbnailBitmap.getWidth() / thumbnailBitmap.getHeight() * thumbnailHeight;
+    if(use_scaling) {
+      thumbnailWidth = (float) thumbnailBitmap.getWidth() / thumbnailBitmap.getHeight() * thumbnailHeight;
+    }else {
+      thumbnailWidth = (float) thumbnailBitmap.getWidth();
+      thumbnailHeight = thumbnailBitmap.getHeight();
+    }
     thumbnailRect = new RectF();
     thumbnailRect.left = thumbnailMargin;
     thumbnailRect.top = getHeight() - currentSheetHeight - thumbnailMargin - thumbnailHeight;

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android-Machine-Learning-ODIR-5K.iml" filepath="$PROJECT_DIR$/Android-Machine-Learning-ODIR-5K.iml" group="Android-Machine-Learning-ODIR-5K" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OpenCV-4.1.2/Android-Machine-Learning-ODIR-5K-OpenCV-4.1.2.iml" filepath="$PROJECT_DIR$/.idea/modules/OpenCV-4.1.2/Android-Machine-Learning-ODIR-5K-OpenCV-4.1.2.iml" group="Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2" />
       <module fileurl="file://$PROJECT_DIR$/OpenCV-4.1.2/OpenCV-4.1.2.iml" filepath="$PROJECT_DIR$/OpenCV-4.1.2/OpenCV-4.1.2.iml" group="Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Android-Machine-Learning-ODIR-5K/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sdk/opencv-4.2.0.iml" filepath="$PROJECT_DIR$/.idea/modules/sdk/opencv-4.2.0.iml" group="Android-Machine-Learning-ODIR-5K/opencv-4.2.0" />

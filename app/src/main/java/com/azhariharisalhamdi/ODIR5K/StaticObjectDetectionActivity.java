@@ -27,6 +27,7 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,8 +60,16 @@ import com.azhariharisalhamdi.ODIR5K.productsearch.SearchEngine.SearchResultList
 import com.azhariharisalhamdi.ODIR5K.productsearch.SearchedObject;
 
 import org.opencv.android.OpenCVLoader;
+import org.opencv.core.Core;
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+import org.opencv.core.Size;
+import org.opencv.imgproc.CLAHE;
+import org.opencv.imgproc.Imgproc;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.TreeMap;
 
@@ -83,6 +92,7 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
   private BottomSheetScrimView bottomSheetScrimView;
   private TextView bottomSheetTitleView, bottomSheetPredictionview;
   private RecyclerView productRecyclerView;
+    protected ImageView bottomSheetArrowImageView;
 
   private Bitmap inputBitmap;
   private SearchedObject searchedObjectForBottomSheet;
@@ -92,6 +102,8 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
 
   private FirebaseVisionObjectDetector detector;
   private SearchEngine searchEngine;
+
+  public boolean object_detection_mode = false;
 
   public String title_buttom_sheet = "Multi-Label Prediction Diagnosis";
 
@@ -108,48 +120,66 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
     super.onCreate(savedInstanceState);
 
     searchEngine = new SearchEngine(getApplicationContext());
-
-    setContentView(R.layout.activity_static_object);
+    if(object_detection_mode)
+        setContentView(R.layout.activity_static_object);
+    else
+        setContentView(R.layout.activity_static_no_object);
 
     loadingView = findViewById(R.id.loading_view);
     loadingView.setOnClickListener(this);
-
-    bottomPromptChip = findViewById(R.id.bottom_prompt_chip);
     inputImageView = findViewById(R.id.input_image_view);
+      bottomSheetArrowImageView = findViewById(R.id.bottom_sheet_arrow);
 
-    previewCardCarousel = findViewById(R.id.card_recycler_view);
-    previewCardCarousel.setHasFixedSize(true);
-    previewCardCarousel.setLayoutManager(
-        new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
-    previewCardCarousel.addItemDecoration(new CardItemDecoration(getResources()));
+    if(object_detection_mode) {
+      bottomPromptChip = findViewById(R.id.bottom_prompt_chip);
+      previewCardCarousel = findViewById(R.id.card_recycler_view);
+      previewCardCarousel.setHasFixedSize(true);
+      previewCardCarousel.setLayoutManager(
+              new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
+      previewCardCarousel.addItemDecoration(new CardItemDecoration(getResources()));
 
-    dotViewContainer = findViewById(R.id.dot_view_container);
-    dotViewSize = getResources().getDimensionPixelOffset(R.dimen.static_image_dot_view_size);
+      dotViewContainer = findViewById(R.id.dot_view_container);
+      dotViewSize = getResources().getDimensionPixelOffset(R.dimen.static_image_dot_view_size);
+    }
 
     setUpBottomSheet();
 
     findViewById(R.id.close_button).setOnClickListener(this);
     findViewById(R.id.photo_library_button).setOnClickListener(this);
 
-    detector =
-        FirebaseVision.getInstance()
-            .getOnDeviceObjectDetector(
-                new FirebaseVisionObjectDetectorOptions.Builder()
-                    .setDetectorMode(FirebaseVisionObjectDetectorOptions.SINGLE_IMAGE_MODE)
-                    .enableMultipleObjects()
-                    .build());
+    if (object_detection_mode){
+      detector =
+              FirebaseVision.getInstance()
+                      .getOnDeviceObjectDetector(
+                              new FirebaseVisionObjectDetectorOptions.Builder()
+                                      .setDetectorMode(FirebaseVisionObjectDetectorOptions.SINGLE_IMAGE_MODE)
+                                      .enableMultipleObjects()
+                                      .build());
+    }
+
     if (getIntent().getData() != null) {
-      detectObjects(getIntent().getData());
+      if(object_detection_mode) {
+        detectObjects(getIntent().getData());
+      }else{
+        try {
+          diagnosePict(getIntent().getData());
+        } catch (IOException e) {
+          e.printStackTrace();
+        }
+      }
     }
   }
 
   @Override
   protected void onDestroy() {
     super.onDestroy();
-    try {
-      detector.close();
-    } catch (IOException e) {
-      Log.e(TAG, "Failed to close the detector!", e);
+    if(object_detection_mode)
+    {
+      try {
+        detector.close();
+      } catch (IOException e) {
+        Log.e(TAG, "Failed to close the detector!", e);
+      }
     }
     searchEngine.shutdown();
   }
@@ -160,7 +190,15 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
         && resultCode == Activity.RESULT_OK
         && data != null
         && data.getData() != null) {
-      detectObjects(data.getData());
+      if(object_detection_mode){
+        detectObjects(data.getData());
+      }else {
+        try {
+          diagnosePict(data.getData());
+        } catch (IOException e) {
+          e.printStackTrace();
+        }
+      }
     } else {
       super.onActivityResult(requestCode, resultCode, data);
     }
@@ -168,40 +206,94 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
 
   @Override
   public void onBackPressed() {
-    if (bottomSheetBehavior.getState() != BottomSheetBehavior.STATE_HIDDEN) {
-      bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
-    } else {
+        if (bottomSheetBehavior.getState() != BottomSheetBehavior.STATE_HIDDEN) {
+            bottomSheetBehavior.setHideable(true);
+            bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+        }
       super.onBackPressed();
-    }
   }
 
   @Override
   public void onClick(View view) {
     int id = view.getId();
-    if (id == R.id.close_button) {
-      onBackPressed();
-    } else if (id == R.id.photo_library_button) {
-      Utils.openImagePicker(this);
-    } else if (id == R.id.bottom_sheet_scrim_view) {
-      bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+    if(object_detection_mode){
+        if (id == R.id.close_button) {
+          onBackPressed();
+        } else if (id == R.id.photo_library_button) {
+          Utils.openImagePicker(this);
+        } else if (id == R.id.bottom_sheet_scrim_view) {
+          bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+        }
+    }else{
+        if (id == R.id.close_button) {
+            onBackPressed();
+        } else if (id == R.id.photo_library_button) {
+            Utils.openImagePicker(this);
+        }
     }
   }
+
+    public Bitmap processCLAHE(Bitmap mbitmap){
+        int w = mbitmap.getWidth();
+        int h = mbitmap.getHeight();
+        Mat mMat = new Mat(h,w, CvType.CV_8UC4);
+        Mat labImage = new Mat(h,w, CvType.CV_8UC4);
+        Bitmap tempBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+        org.opencv.android.Utils.bitmapToMat(mbitmap, mMat);
+
+        Imgproc.cvtColor(mMat, labImage, Imgproc.COLOR_BGR2Lab,3);
+
+        java.util.List<Mat> Lab = new ArrayList<Mat>();
+
+        Core.split(labImage,Lab);
+        Mat L = Lab.get(0); // L,a,b are references, not copies
+        Mat a = Lab.get(1);
+        Mat b = Lab.get(2);
+
+        CLAHE ce = Imgproc.createCLAHE();
+        ce.setClipLimit(20);
+        ce.setTilesGridSize(new Size(10, 10));
+        ce.apply(L, L);
+
+        Core.merge(new ArrayList<>(Arrays.asList(L, a, b)),labImage);
+        Imgproc.cvtColor(labImage,mMat,Imgproc.COLOR_Lab2BGR);
+        org.opencv.android.Utils.matToBitmap(mMat, tempBitmap);
+        return tempBitmap;
+    }
 
   @Override
   public void onPreviewCardClicked(SearchedObject searchedObject) {
     showSearchResults(searchedObject);
   }
 
-  private void showSearchResults(SearchedObject searchedObject) {
-    searchedObjectForBottomSheet = searchedObject;
-    List<Product> productList = searchedObject.getProductList();
-    String results = searchedObject.getResults();
-    bottomSheetTitleView.setText(title_buttom_sheet);
-    bottomSheetPredictionview.setText(results);
-    productRecyclerView.setAdapter(new ProductAdapter(productList));
-    bottomSheetBehavior.setPeekHeight(((View) inputImageView.getParent()).getHeight() / 2);
-    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-  }
+    private void showSearchResults(SearchedObject searchedObject) {
+        searchedObjectForBottomSheet = searchedObject;
+        List<Product> productList = searchedObject.getProductList();
+        String results = searchedObject.getResults();
+        bottomSheetTitleView.setText(title_buttom_sheet);
+        bottomSheetPredictionview.setText(results);
+        productRecyclerView.setAdapter(new ProductAdapter(productList));
+        bottomSheetBehavior.setPeekHeight(((View) inputImageView.getParent()).getHeight() / 2);
+        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+    }
+
+    private void showDiagnosisResults(List<Product> product_List, String result) {
+        Log.d(TAG, "in showDiagnosisResults");
+        List<Product> productList = product_List;
+        String results = result;
+        Log.d(TAG, "in showDiagnosisResults result:"+results);
+        bottomSheetTitleView.setText(title_buttom_sheet);
+        bottomSheetPredictionview.setText(results);
+        productRecyclerView.setAdapter(new ProductAdapter(productList));
+        int line_count = results.split("\n").length + 1;
+        int peekHeight = line_count > 1 ? 150 + line_count*50 : 150;
+        bottomSheetBehavior.setPeekHeight(peekHeight);
+        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+    }
+
+    private void callImagePicker(){
+        Utils.openImagePicker(this);
+    }
 
   private void setUpBottomSheet() {
     bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.bottom_sheet));
@@ -209,9 +301,29 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
         new BottomSheetBehavior.BottomSheetCallback() {
           @Override
           public void onStateChanged(@NonNull View bottomSheet, int newState) {
-            Log.d(TAG, "Bottom sheet new state: " + newState);
-            bottomSheetScrimView.setVisibility(
-                newState == BottomSheetBehavior.STATE_HIDDEN ? View.GONE : View.VISIBLE);
+              Log.d(TAG, "Bottom sheet new state: " + newState);
+              if(object_detection_mode) {
+                 bottomSheetScrimView.setVisibility(newState == BottomSheetBehavior.STATE_HIDDEN ? View.GONE : View.VISIBLE);
+              }
+              switch (newState) {
+                  case BottomSheetBehavior.STATE_HIDDEN:
+                      break;
+                  case BottomSheetBehavior.STATE_EXPANDED:
+                  {
+                      bottomSheetArrowImageView.setImageResource(R.drawable.icn_chevron_down);
+                  }
+                  break;
+                  case BottomSheetBehavior.STATE_COLLAPSED:
+                  {
+                      bottomSheetArrowImageView.setImageResource(R.drawable.icn_chevron_up);
+                  }
+                  break;
+                  case BottomSheetBehavior.STATE_DRAGGING:
+                      break;
+                  case BottomSheetBehavior.STATE_SETTLING:
+                      bottomSheetArrowImageView.setImageResource(R.drawable.icn_chevron_up);
+                      break;
+              }
           }
 
           @Override
@@ -222,18 +334,21 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
 
             int collapsedStateHeight =
                 Math.min(bottomSheetBehavior.getPeekHeight(), bottomSheet.getHeight());
-            bottomSheetScrimView.updateWithThumbnailTranslate(
-                searchedObjectForBottomSheet.getObjectThumbnail(),
-                collapsedStateHeight,
-                slideOffset,
-                bottomSheet);
+            if(object_detection_mode) {
+              bottomSheetScrimView.updateWithThumbnailTranslate(
+                      searchedObjectForBottomSheet.getObjectThumbnail(),
+                      collapsedStateHeight,
+                      slideOffset,
+                      bottomSheet);
+            }
           }
         });
-    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
 
-    bottomSheetScrimView = findViewById(R.id.bottom_sheet_scrim_view);
-    bottomSheetScrimView.setOnClickListener(this);
-
+    if(object_detection_mode) {
+        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+        bottomSheetScrimView = findViewById(R.id.bottom_sheet_scrim_view);
+        bottomSheetScrimView.setOnClickListener(this);
+    }
     bottomSheetTitleView = findViewById(R.id.bottom_sheet_title);
     bottomSheetPredictionview = findViewById(R.id.diagnosis_prediction);
     productRecyclerView = findViewById(R.id.product_recycler_view);
@@ -249,9 +364,9 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
     previewCardCarousel.clearOnScrollListeners();
     dotViewContainer.removeAllViews();
     currentSelectedObjectIndex = 0;
-
     try {
-      inputBitmap = Utils.loadImage(this, imageUri, MAX_IMAGE_DIMENSION);
+        inputBitmap = Utils.loadImage(this, imageUri, MAX_IMAGE_DIMENSION);
+        inputBitmap = processCLAHE(inputBitmap);
     } catch (IOException e) {
       Log.e(TAG, "Failed to load file: " + imageUri, e);
       showBottomPromptChip("Failed to load file!");
@@ -266,6 +381,26 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
         .addOnSuccessListener(objects -> onObjectsDetected(image, objects))
         .addOnFailureListener(e -> onObjectsDetected(image, ImmutableList.of()));
   }
+
+    @MainThread
+    public void diagnosePict(Uri imageUri) throws IOException {
+        inputImageView.setImageDrawable(null);
+        productRecyclerView.setAdapter(new ProductAdapter(ImmutableList.of()));
+        productRecyclerView.clearOnScrollListeners();
+        try {
+            inputBitmap = Utils.loadImage(this, imageUri, MAX_IMAGE_DIMENSION);
+        } catch (IOException e) {
+            Log.e(TAG, "Failed to load file: " + imageUri, e);
+            showBottomPromptChip("Failed to load file!");
+            return;
+        }
+
+        inputBitmap = processCLAHE(inputBitmap);
+        Log.d(TAG, "in diagnosePict");
+        inputImageView.setImageBitmap(inputBitmap);
+        loadingView.setVisibility(View.VISIBLE);
+        searchEngine.predict(this, inputBitmap, /* listener= */ this);
+    }
 
   @MainThread
   private void onObjectsDetected(FirebaseVisionImage image, List<FirebaseVisionObject> objects) {
@@ -288,96 +423,105 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
 
   @Override
   public void onSearchCompleted(DetectedObject object, List<Product> productList, String result) {
-    Log.d(TAG, "Search completed for object index: " + object.getObjectIndex());
-    searchedObjectMap.put(
-        object.getObjectIndex(), new SearchedObject(getResources(), object, productList, result));
-    if (searchedObjectMap.size() < detectedObjectNum) {
-      // Hold off showing the result until the search of all detected objects completes.
-      return;
-    }
+    if(object_detection_mode) {
+      Log.d(TAG, "Search completed for object index: " + object.getObjectIndex());
+      searchedObjectMap.put(
+              object.getObjectIndex(), new SearchedObject(getResources(), object, productList, result));
+      if (searchedObjectMap.size() < detectedObjectNum) {
+        // Hold off showing the result until the search of all detected objects completes.
+        return;
+      }
 
-    showBottomPromptChip(getString(R.string.static_image_prompt_detected_results));
-    loadingView.setVisibility(View.GONE);
-    previewCardCarousel.setAdapter(
-        new PreviewCardAdapter(ImmutableList.copyOf(searchedObjectMap.values()), this));
-    previewCardCarousel.addOnScrollListener(
-        new RecyclerView.OnScrollListener() {
-          @Override
-          public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
-            Log.d(TAG, "New card scroll state: " + newState);
-            if (newState == RecyclerView.SCROLL_STATE_IDLE) {
-              for (int i = 0; i < recyclerView.getChildCount(); i++) {
-                View childView = recyclerView.getChildAt(i);
-                if (childView.getX() >= 0) {
-                  int cardIndex = recyclerView.getChildAdapterPosition(childView);
-                  if (cardIndex != currentSelectedObjectIndex) {
-                    selectNewObject(cardIndex);
+      showBottomPromptChip(getString(R.string.static_image_prompt_detected_results));
+      loadingView.setVisibility(View.GONE);
+      previewCardCarousel.setAdapter(
+              new PreviewCardAdapter(ImmutableList.copyOf(searchedObjectMap.values()), this));
+      previewCardCarousel.addOnScrollListener(
+              new RecyclerView.OnScrollListener() {
+                @Override
+                public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
+                  Log.d(TAG, "New card scroll state: " + newState);
+                  if (newState == RecyclerView.SCROLL_STATE_IDLE) {
+                    for (int i = 0; i < recyclerView.getChildCount(); i++) {
+                      View childView = recyclerView.getChildAt(i);
+                      if (childView.getX() >= 0) {
+                        int cardIndex = recyclerView.getChildAdapterPosition(childView);
+                        if (cardIndex != currentSelectedObjectIndex) {
+                          selectNewObject(cardIndex);
+                        }
+                        break;
+                      }
+                    }
                   }
-                  break;
                 }
-              }
-            }
-          }
-        });
+              });
 
-    for (SearchedObject searchedObject : searchedObjectMap.values()) {
-      StaticObjectDotView dotView = createDotView(searchedObject);
-      dotView.setOnClickListener(
-          v -> {
-            if (searchedObject.getObjectIndex() == currentSelectedObjectIndex) {
-              showSearchResults(searchedObject);
-            } else {
-              selectNewObject(searchedObject.getObjectIndex());
-              showSearchResults(searchedObject);
-              previewCardCarousel.smoothScrollToPosition(searchedObject.getObjectIndex());
-            }
-          });
+      for (SearchedObject searchedObject : searchedObjectMap.values()) {
+        StaticObjectDotView dotView = createDotView(searchedObject);
+        dotView.setOnClickListener(
+                v -> {
+                  if (searchedObject.getObjectIndex() == currentSelectedObjectIndex) {
+                    showSearchResults(searchedObject);
+                  } else {
+                    selectNewObject(searchedObject.getObjectIndex());
+                    showSearchResults(searchedObject);
+                    previewCardCarousel.smoothScrollToPosition(searchedObject.getObjectIndex());
+                  }
+                });
 
-      dotViewContainer.addView(dotView);
-      AnimatorSet animatorSet =
-          ((AnimatorSet) AnimatorInflater.loadAnimator(this, R.animator.static_image_dot_enter));
-      animatorSet.setTarget(dotView);
-      animatorSet.start();
+        dotViewContainer.addView(dotView);
+        AnimatorSet animatorSet =
+                ((AnimatorSet) AnimatorInflater.loadAnimator(this, R.animator.static_image_dot_enter));
+        animatorSet.setTarget(dotView);
+        animatorSet.start();
+      }
     }
   }
 
-  private StaticObjectDotView createDotView(SearchedObject searchedObject) {
-    float viewCoordinateScale;
-    float horizontalGap;
-    float verticalGap;
-    float inputImageViewRatio = (float) inputImageView.getWidth() / inputImageView.getHeight();
-    float inputBitmapRatio = (float) inputBitmap.getWidth() / inputBitmap.getHeight();
-    if (inputBitmapRatio <= inputImageViewRatio) { // Image content fills height
-      viewCoordinateScale = (float) inputImageView.getHeight() / inputBitmap.getHeight();
-      horizontalGap =
-          (inputImageView.getWidth() - inputBitmap.getWidth() * viewCoordinateScale) / 2;
-      verticalGap = 0;
-    } else { // Image content fills width
-      viewCoordinateScale = (float) inputImageView.getWidth() / inputBitmap.getWidth();
-      horizontalGap = 0;
-      verticalGap =
-          (inputImageView.getHeight() - inputBitmap.getHeight() * viewCoordinateScale) / 2;
+    @Override
+    public void onSearchCompleted(List<Product> productList, String result) {
+      loadingView.setVisibility(View.GONE);
+      Log.d(TAG, "in onSearchCompleted type 2");
+      showDiagnosisResults(productList, result);
     }
 
-    Rect boundingBox = searchedObject.getBoundingBox();
-    RectF boxInViewCoordinate =
-        new RectF(
-            boundingBox.left * viewCoordinateScale + horizontalGap,
-            boundingBox.top * viewCoordinateScale + verticalGap,
-            boundingBox.right * viewCoordinateScale + horizontalGap,
-            boundingBox.bottom * viewCoordinateScale + verticalGap);
-    boolean initialSelected = (searchedObject.getObjectIndex() == 0);
-    StaticObjectDotView dotView = new StaticObjectDotView(this, initialSelected);
-    FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(dotViewSize, dotViewSize);
-    PointF dotCenter =
-        new PointF(
-            (boxInViewCoordinate.right + boxInViewCoordinate.left) / 2,
-            (boxInViewCoordinate.bottom + boxInViewCoordinate.top) / 2);
-    layoutParams.setMargins(
-        (int) (dotCenter.x - dotViewSize / 2f), (int) (dotCenter.y - dotViewSize / 2f), 0, 0);
-    dotView.setLayoutParams(layoutParams);
-    return dotView;
-  }
+    private StaticObjectDotView createDotView(SearchedObject searchedObject) {
+        float viewCoordinateScale;
+        float horizontalGap;
+        float verticalGap;
+        float inputImageViewRatio = (float) inputImageView.getWidth() / inputImageView.getHeight();
+        float inputBitmapRatio = (float) inputBitmap.getWidth() / inputBitmap.getHeight();
+        if (inputBitmapRatio <= inputImageViewRatio) { // Image content fills height
+          viewCoordinateScale = (float) inputImageView.getHeight() / inputBitmap.getHeight();
+          horizontalGap =
+              (inputImageView.getWidth() - inputBitmap.getWidth() * viewCoordinateScale) / 2;
+          verticalGap = 0;
+        } else { // Image content fills width
+          viewCoordinateScale = (float) inputImageView.getWidth() / inputBitmap.getWidth();
+          horizontalGap = 0;
+          verticalGap =
+              (inputImageView.getHeight() - inputBitmap.getHeight() * viewCoordinateScale) / 2;
+        }
+
+        Rect boundingBox = searchedObject.getBoundingBox();
+        RectF boxInViewCoordinate =
+            new RectF(
+                boundingBox.left * viewCoordinateScale + horizontalGap,
+                boundingBox.top * viewCoordinateScale + verticalGap,
+                boundingBox.right * viewCoordinateScale + horizontalGap,
+                boundingBox.bottom * viewCoordinateScale + verticalGap);
+        boolean initialSelected = (searchedObject.getObjectIndex() == 0);
+        StaticObjectDotView dotView = new StaticObjectDotView(this, initialSelected);
+        FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(dotViewSize, dotViewSize);
+        PointF dotCenter =
+            new PointF(
+                (boxInViewCoordinate.right + boxInViewCoordinate.left) / 2,
+                (boxInViewCoordinate.bottom + boxInViewCoordinate.top) / 2);
+        layoutParams.setMargins(
+            (int) (dotCenter.x - dotViewSize / 2f), (int) (dotCenter.y - dotViewSize / 2f), 0, 0);
+        dotView.setLayoutParams(layoutParams);
+        return dotView;
+    }
 
   private void selectNewObject(int objectIndex) {
     StaticObjectDotView dotViewToDeselect =

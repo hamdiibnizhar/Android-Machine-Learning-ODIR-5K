@@ -1,3 +1,0 @@
-/home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir
-/home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
-/home/vox/Projects/Machine-Learning/Android-Machine-Learning-ODIR-5K/OpenCV-4.1.2/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/opencv_jni_shared.dir

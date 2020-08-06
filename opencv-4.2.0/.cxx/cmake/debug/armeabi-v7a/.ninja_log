@@ -3,3 +3,9 @@
 720	1335	616796931	libopencv_jni_shared.a	fdb6f4a51ce17371
 0	11	0	clean	60c9e9c365414f20
 1	16	0	clean	60c9e9c365414f20
+0	1810	617479397	CMakeFiles/opencv_jni_shared.dir/dummy.cpp.o	2678406eab68c2e0
+1810	5984	617479401	libopencv_jni_shared.a	fdb6f4a51ce17371
+11	594	0	clean	60c9e9c365414f20
+1	1254	618343410	CMakeFiles/opencv_jni_shared.dir/dummy.cpp.o	2678406eab68c2e0
+1254	2762	618343411	libopencv_jni_shared.a	fdb6f4a51ce17371
+44	11215	0	clean	60c9e9c365414f20

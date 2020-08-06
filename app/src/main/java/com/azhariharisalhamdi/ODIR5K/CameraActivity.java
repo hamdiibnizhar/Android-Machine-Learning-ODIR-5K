@@ -299,7 +299,6 @@ public abstract class CameraActivity extends AppCompatActivity
     int h = mbitmap.getHeight();
     Mat mMat = new Mat(w,h, CvType.CV_8UC3);
     Mat labImage = new Mat(w,h, CvType.CV_8UC3);
-//    Bitmap tempBitmap = new Bitmap(mbitmap);
     Bitmap tempBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
     Utils.bitmapToMat(mbitmap, mMat);
 
@@ -319,7 +318,6 @@ public abstract class CameraActivity extends AppCompatActivity
 
     Core.merge(new ArrayList<>(Arrays.asList(L, a, b)),labImage);
     Imgproc.cvtColor(labImage,mMat,Imgproc.COLOR_Lab2BGR);
-    Imgproc.cvtColor(mMat,mMat,Imgproc.COLOR_BGR2RGB);
     Utils.matToBitmap(mMat, tempBitmap);
     return tempBitmap;
   }

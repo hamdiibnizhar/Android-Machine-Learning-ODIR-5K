@@ -11,11 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e847cde-6ee3-4519-a086-3412eab0db60" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/OpenCV-4.1.2/Android-Machine-Learning-ODIR-5K-OpenCV-4.1.2.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/assets/multi-label_model.tflite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/StaticClassificationActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_static_classification.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/import-summary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/productsearch/ResultStaticImageAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_static_no_object.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opencv-4.2.0/build/generated/aidl_source_output_dir/debug/out/org/opencv/engine/OpenCVEngineInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opencv-4.2.0/build/generated/source/buildConfig/debug/org/opencv/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileChanges/last-build.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" />
@@ -28,78 +31,49 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_0_0_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_rules_1_1_0_alpha3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_0_alpha3_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_auto_value_auto_value_annotations_1_6_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_3_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_28_1_android_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_truth_truth_1_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_googlecode_java_diff_utils_diffutils_1_3_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_compat_qual_2_5_5_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_18_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_0_0_0_nightly_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_gpu_0_0_0_nightly_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_support_0_0_0_nightly_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android-Machine-Learning-ODIR-5K.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXPLORE_THE_CODE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ODIR-5K.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_0_0_0_nightly_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_0_0_0_nightly_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_gpu_0_0_0_nightly_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_gpu_0_0_0_nightly_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_support_0_0_0_nightly_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_tensorflow_tensorflow_lite_support_0_0_0_nightly_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/sdk/opencv-4.2.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/sdk/opencv-4.2.0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android-Machine-Learning-ODIR-5K.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Android-Machine-Learning-ODIR-5K.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_deps" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/.ninja_log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeCache.txt" beforeDir="false" />
@@ -302,15 +276,10 @@
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/aapt_friendly_merged_manifests/release/processReleaseManifest/aapt/output.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/annotation_processor_list/release/javaPreCompileRelease/annotationProcessors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/cmake/debug/obj/arm64-v8a/libc++_shared.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/cmake/debug/obj/arm64-v8a/libopencv_jni_shared.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/cmake/release/obj/arm64-v8a/libc++_shared.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/cmake/release/obj/arm64-v8a/libopencv_jni_shared.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/cmake/release/obj/armeabi-v7a/libc++_shared.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/cmake/release/obj/armeabi-v7a/libopencv_jni_shared.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/cmake/release/obj/x86/libc++_shared.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/cmake/release/obj/x86/libopencv_jni_shared.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/cmake/release/obj/x86_64/libc++_shared.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/cmake/release/obj/x86_64/libopencv_jni_shared.a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/incremental/compileDebugAidl/dependency.store" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/incremental/compileReleaseAidl/dependency.store" beforeDir="false" />
@@ -329,13 +298,8 @@
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/incremental/packageReleaseResources/merger.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/incremental/release-mergeJniLibs/merge-state" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/intermediate-jars/debug/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/intermediate-jars/debug/jni/arm64-v8a/libc++_shared.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/intermediate-jars/debug/res.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/intermediate-jars/release/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/intermediate-jars/release/jni/arm64-v8a/libc++_shared.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/intermediate-jars/release/jni/armeabi-v7a/libc++_shared.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/intermediate-jars/release/jni/x86/libc++_shared.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/intermediate-jars/release/jni/x86_64/libc++_shared.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/intermediate-jars/release/res.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/BuildConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/org/opencv/R$attr.class" beforeDir="false" />
@@ -701,19 +665,9 @@
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/res/symbol-table-with-package/release/package-aware-r.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/symbols/debug/R.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/symbols/release/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/mergeJniLibs/debug/0/lib/arm64-v8a/libc++_shared.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/mergeJniLibs/release/0/lib/arm64-v8a/libc++_shared.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/mergeJniLibs/release/0/lib/armeabi-v7a/libc++_shared.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/mergeJniLibs/release/0/lib/x86/libc++_shared.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/mergeJniLibs/release/0/lib/x86_64/libc++_shared.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/mergeJniLibs/release/__content__.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/stripDebugSymbol/debug/0/lib/arm64-v8a/libc++_shared.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/stripDebugSymbol/debug/__content__.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/stripDebugSymbol/release/0/lib/arm64-v8a/libc++_shared.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/stripDebugSymbol/release/0/lib/armeabi-v7a/libc++_shared.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/stripDebugSymbol/release/0/lib/x86/libc++_shared.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/stripDebugSymbol/release/0/lib/x86_64/libc++_shared.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/intermediates/transforms/stripDebugSymbol/release/__content__.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/build/outputs/logs/manifest-merger-release-report.txt" beforeDir="false" />
@@ -1060,101 +1014,21 @@
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/java/src/org/opencv/videoio/Videoio.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/libcxx_helper/CMakeLists.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenCV-4.1.2/libcxx_helper/dummy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/download.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/app-arm64-v8a-release.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/app-armeabi-v7a-release.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/app-universal-release.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/assets/fox-mobilenet_v1_1.0_224.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/assets/fox.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/azhariharisalhamdi/ODIR5K/ClassifierTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/custom_model_multiclass.tflite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/label.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/mobilenet_v2_multilabel.tflite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/CameraActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/CameraConnectionFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/ClassifierActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/LegacyCameraConnectionFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/customview/AutoFitTextureView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/customview/OverlayView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/customview/RecognitionScoreView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/customview/ResultsView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/env/BorderedText.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/env/ImageUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/env/Logger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/Classifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/ClassifierFloatEfficientNet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/ClassifierFloatMobileNet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/ClassifierMultiClassCustom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/ClassifierMultiLabelMobileNet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/ClassifierQuantizedEfficientNet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/ClassifierQuantizedMobileNet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jniLibs/arm64-v8a/libopencv_java4.so" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/jniLibs/arm64-v8a/libopencv_java4.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jniLibs/armeabi-v7a/libopencv_java4.so" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/jniLibs/armeabi-v7a/libopencv_java4.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jniLibs/x86/libopencv_java4.so" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/jniLibs/x86/libopencv_java4.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jniLibs/x86_64/libopencv_java4.so" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/jniLibs/x86_64/libopencv_java4.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/eye_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/eye_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/eye_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icn_chevron_down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icn_chevron_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tfl2_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tfl2_logo_dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bottom_sheet_bg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_add.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_remove.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/rectangle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_buttom_sheet_custom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tfe_ic_activity_camera.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tfe_ic_camera_connection_fragment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tfe_ic_layout_bottom_sheet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/eye_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/eye_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/eye_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/eye_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/eye_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_fundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/CameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/CameraActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/ClassifierActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/ClassifierActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/LiveObjectDetectionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/LiveObjectDetectionActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/StaticObjectDetectionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/StaticObjectDetectionActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/camera/WorkflowModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/camera/WorkflowModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/objectdetection/DetectedObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/objectdetection/DetectedObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/productsearch/BottomSheetScrimView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/productsearch/BottomSheetScrimView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/productsearch/SearchEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/productsearch/SearchEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/Classifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/ODIR5K/tflite/Classifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_buttom_sheet_custom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_buttom_sheet_custom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/product_bottom_sheet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/product_bottom_sheet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/appcompat/group-index.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/coordinatorlayout/group-index.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/test/ext/group-index.xml" beforeDir="false" />
@@ -1162,20 +1036,19 @@
       <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/google/android/material/group-index.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/master-index.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/sdk-registry.xml/sdk-registry.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/classifydemo_img1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/classifydemo_img2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/classifydemo_img4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/classifydemo_img5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/classifydemo_img6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/classifydemo_img7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/classifydemo_img8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/debug/arm64-v8a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/debug/arm64-v8a/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/debug/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/debug/arm64-v8a/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/debug/armeabi-v7a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/debug/armeabi-v7a/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/debug/armeabi-v7a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/debug/armeabi-v7a/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/debug/x86/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/debug/x86/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/debug/x86_64/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/debug/x86_64/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/arm64-v8a/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/arm64-v8a/json_generation_record.json" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/arm64-v8a/json_generation_record.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/armeabi-v7a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/armeabi-v7a/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/x86/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/x86/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/x86/json_generation_record.json" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/x86/json_generation_record.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/x86_64/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/x86_64/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/x86_64/json_generation_record.json" beforeDir="false" afterPath="$PROJECT_DIR$/opencv-4.2.0/.cxx/cmake/release/x86_64/json_generation_record.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1198,6 +1071,13 @@
         <projects_view />
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="KEY_STORE_PATH" value="F:\Projects\Android\Android-Machine-Learning-ODIR-5K\keypad\ODIR-5K.jks" />
@@ -1231,13 +1111,14 @@
     <property name="ExportApk.ApkPath" value="F:\Projects\Android\Android-Machine-Learning-ODIR-5K\app" />
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="ExportApk.SignV2" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Build Variants" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="PsdUISettings">
@@ -1245,12 +1126,12 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="android.template.-2056243952">
-      <recent name="com.azhariharisalhamdi.ODIR5K" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Projects\Android\Android-Machine-Learning-ODIR-5K\app\src\main\res\layout" />
       <recent name="F:\Projects\Android\Android-Machine-Learning-ODIR-5K" />
+    </key>
+    <key name="android.template.-2056243952">
+      <recent name="com.azhariharisalhamdi.ODIR5K" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -1381,14 +1262,19 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="477" y="251" key="#PSD" timestamp="1595090050699">
+    <state x="477" y="251" key="#PSD" timestamp="1596610836906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="477" y="251" key="#PSD/0.0.1920.1040/1920.435.1366.728@0.0.1920.1040" timestamp="1595090050699" />
+    <state x="477" y="251" key="#PSD/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596610836906" />
     <state x="679" y="165" key="#app" timestamp="1595009366352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="165" key="#app/0.0.1920.1040/1920.435.1366.728@0.0.1920.1040" timestamp="1595009366352" />
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1595772184842">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595772184842" />
     <state x="679" y="165" key="#java" timestamp="1595057963617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1397,48 +1283,67 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.435.1366.728@0.0.1920.1040" timestamp="1595060359326" />
-    <state width="1306" height="175" key="GridCell.Tab.0.bottom" timestamp="1595179359131">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="156" key="GridCell.Tab.0.bottom" timestamp="1596736979289">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="175" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595179359131" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.435.1366.728@0.0.1920.1040" timestamp="1595117031568" />
-    <state width="1306" height="175" key="GridCell.Tab.0.center" timestamp="1595179359131">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="156" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596736979289" />
+    <state width="1323" height="95" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1596656099925" />
+    <state width="1877" height="156" key="GridCell.Tab.0.center" timestamp="1596736979289">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="175" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595179359131" />
     <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.435.1366.728@0.0.1920.1040" timestamp="1595117031567" />
-    <state width="1306" height="175" key="GridCell.Tab.0.left" timestamp="1595179359116">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="156" key="GridCell.Tab.0.center/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596736979289" />
+    <state width="1323" height="95" key="GridCell.Tab.0.center/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1596656099924" />
+    <state width="1877" height="156" key="GridCell.Tab.0.left" timestamp="1596736979288">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="175" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595179359116" />
     <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.435.1366.728@0.0.1920.1040" timestamp="1595117031567" />
-    <state width="1306" height="175" key="GridCell.Tab.0.right" timestamp="1595179359131">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="156" key="GridCell.Tab.0.left/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596736979288" />
+    <state width="1323" height="95" key="GridCell.Tab.0.left/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1596656099924" />
+    <state width="1877" height="156" key="GridCell.Tab.0.right" timestamp="1596736979289">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="175" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595179359131" />
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.435.1366.728@0.0.1920.1040" timestamp="1595117031567" />
+    <state width="1877" height="156" key="GridCell.Tab.0.right/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596736979289" />
+    <state width="1323" height="95" key="GridCell.Tab.0.right/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1596656099924" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1596737641075">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596737641075" />
+    <state x="2412" y="863" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596648745726">
+      <screen x="1920" y="583" width="1366" height="728" />
+    </state>
+    <state x="2412" y="863" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1596648745726" />
     <state x="1920" y="454" width="1382" height="718" key="dock-window-1" timestamp="1595137665311">
       <screen x="1920" y="435" width="1366" height="728" />
     </state>
     <state x="1920" y="454" width="1382" height="718" key="dock-window-1/0.0.1920.1040/1920.435.1366.728@0.0.1920.1040" timestamp="1595137665311" />
-    <state x="467" y="176" width="641" height="534" key="find.popup" timestamp="1595168383451">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="656" y="251" width="901" height="763" key="find.popup" timestamp="1596737920269">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="467" y="176" width="641" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1595168383451" />
     <state x="657" y="252" width="736" height="536" key="find.popup/0.0.1920.1040/1920.435.1366.728@0.0.1920.1040" timestamp="1595115872549" />
+    <state x="656" y="251" width="901" height="763" key="find.popup/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596737920269" />
     <state x="695" y="165" key="psd.add.module.dependency.panel.dimension" timestamp="1595057472582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="695" y="165" key="psd.add.module.dependency.panel.dimension/0.0.1920.1040/1920.435.1366.728@0.0.1920.1040" timestamp="1595057472582" />
-    <state x="425" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1595151300785">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="597" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1596709924344">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="425" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1595151300785" />
-    <state x="443" y="158" width="672" height="475" key="search.everywhere.popup" timestamp="1595147808814">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="597" y="0" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596709924344" />
+    <state x="623" y="226" width="945" height="679" key="search.everywhere.popup" timestamp="1595779093049">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="443" y="158" width="672" height="475" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1595147808814" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.435.1366.728@0.0.1920.1040" timestamp="1595095000224" />
+    <state x="623" y="226" width="945" height="679" key="search.everywhere.popup/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595779093049" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -203,10 +203,12 @@
             android:id="@+id/model_spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
             android:entries="@array/tfe_ic_models"
-            android:prompt="@string/tfe_ic_model" />
+            android:prompt="@string/tfe_ic_model"
+            android:background="#000000"
+            android:textColor="@android:color/white" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -227,6 +229,8 @@
             android:layout_marginTop="10dp"
             android:layout_alignParentRight="true"
             android:entries="@array/tfe_ic_devices"
+            android:background="#000000"
+            android:textColor="@android:color/white"
             android:prompt="@string/tfe_ic_device" />
     </RelativeLayout>
 </LinearLayout>

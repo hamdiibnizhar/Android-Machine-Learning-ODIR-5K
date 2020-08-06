@@ -27,6 +27,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -84,9 +85,10 @@ public class LiveObjectDetectionActivity extends AppCompatActivity implements On
   private RecyclerView productRecyclerView;
   private TextView bottomSheetTitleView, bottomSheetPredictionview;
   private Bitmap objectThumbnailForBottomSheet;
+  protected ImageView bottomSheetArrowImageView;
   private boolean slidingSheetUpFromHiddenState;
 
-  public String title_buttom_sheet = "Multi-Label Prediction Diagnosis";
+  public String title_buttom_sheet = "Multiple Diagnosis Prediction";
 
   static {
     if (!OpenCVLoader.initDebug()) {
@@ -120,6 +122,7 @@ public class LiveObjectDetectionActivity extends AppCompatActivity implements On
     searchButtonAnimator.setTarget(searchButton);
 
     searchProgressBar = findViewById(R.id.search_progress_bar);
+    bottomSheetArrowImageView = findViewById(R.id.bottom_sheet_arrow);
 
     setUpBottomSheet();
 
@@ -240,12 +243,18 @@ public class LiveObjectDetectionActivity extends AppCompatActivity implements On
                 workflowModel.setWorkflowState(WorkflowState.DETECTING);
                 break;
               case BottomSheetBehavior.STATE_COLLAPSED:
-              case BottomSheetBehavior.STATE_EXPANDED:
               case BottomSheetBehavior.STATE_HALF_EXPANDED:
                 slidingSheetUpFromHiddenState = false;
+                bottomSheetArrowImageView.setImageResource(R.drawable.icn_chevron_up);
+                break;
+              case BottomSheetBehavior.STATE_EXPANDED:
+                slidingSheetUpFromHiddenState = false;
+                bottomSheetArrowImageView.setImageResource(R.drawable.icn_chevron_down);
+                break;
+              case BottomSheetBehavior.STATE_SETTLING:
+                bottomSheetArrowImageView.setImageResource(R.drawable.icn_chevron_up);
                 break;
               case BottomSheetBehavior.STATE_DRAGGING:
-              case BottomSheetBehavior.STATE_SETTLING:
               default:
                 break;
             }

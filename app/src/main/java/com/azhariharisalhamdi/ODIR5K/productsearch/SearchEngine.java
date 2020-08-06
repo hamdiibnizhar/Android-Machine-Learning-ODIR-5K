@@ -58,6 +58,7 @@ public class SearchEngine {
 
   public interface SearchResultListener {
     void onSearchCompleted(DetectedObject object, List<Product> productList, String result);
+    void onSearchCompleted(List<Product> productList, String result);
   }
 
   private final RequestQueue searchRequestQueue;
@@ -85,14 +86,14 @@ public class SearchEngine {
     resultRecognition = "";
     if (results != null && results.size() >= 3) {
       Classifier.Recognition recognition = results.get(0);
-      productList.add(new Product(recognition.getTitle(), String.format("%.2f", (100 * recognition.getConfidence()))+"%"));
+      productList.add(new Product(recognition.getTitle(), String.format("%.5f", (100 * recognition.getConfidence()))+"%"));
       if (recognition != null && recognition.getConfidence() > 0.5) {
         if (recognition.getTitle() != null) resultRecognition = recognition.getTitle();
         if (recognition.getConfidence() != null)
           resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition.getConfidence())) + "%";
       }
       Classifier.Recognition recognition1 = results.get(1);
-      productList.add(new Product(recognition1.getTitle(), String.format("%.2f", (100 * recognition1.getConfidence()))+"%"));
+      productList.add(new Product(recognition1.getTitle(), String.format("%.5f", (100 * recognition1.getConfidence()))+"%"));
       if (recognition1 != null && recognition1.getConfidence() > 0.5) {
         resultRecognition = resultRecognition + "\n";
         if (recognition1.getTitle() != null)
@@ -101,7 +102,7 @@ public class SearchEngine {
           resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition1.getConfidence())) + "%";
       }
       Classifier.Recognition recognition2 = results.get(2);
-      productList.add(new Product(recognition2.getTitle(), String.format("%.2f", (100 * recognition2.getConfidence()))+"%"));
+      productList.add(new Product(recognition2.getTitle(), String.format("%.5f", (100 * recognition2.getConfidence()))+"%"));
       if (recognition2 != null && recognition2.getConfidence() > 0.5) {
         resultRecognition = resultRecognition + "\n";
         if (recognition2.getTitle() != null)
@@ -110,7 +111,7 @@ public class SearchEngine {
           resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition2.getConfidence())) + "%";
       }
       Classifier.Recognition recognition3 = results.get(3);
-      productList.add(new Product(recognition3.getTitle(), String.format("%.2f", (100 * recognition3.getConfidence()))+"%"));
+      productList.add(new Product(recognition3.getTitle(), String.format("%.5f", (100 * recognition3.getConfidence()))+"%"));
       if (recognition3 != null && recognition3.getConfidence() > 0.5) {
         resultRecognition = resultRecognition + "\n";
         if (recognition3.getTitle() != null)
@@ -119,7 +120,7 @@ public class SearchEngine {
           resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition3.getConfidence())) + "%";
       }
       Classifier.Recognition recognition4 = results.get(4);
-      productList.add(new Product(recognition4.getTitle(), String.format("%.2f", (100 * recognition4.getConfidence()))+"%"));
+      productList.add(new Product(recognition4.getTitle(), String.format("%.5f", (100 * recognition4.getConfidence()))+"%"));
       if (recognition4 != null && recognition4.getConfidence() > 0.5) {
         resultRecognition = resultRecognition + "\n";
         if (recognition4.getTitle() != null)
@@ -128,7 +129,7 @@ public class SearchEngine {
           resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition4.getConfidence())) + "%";
       }
       Classifier.Recognition recognition5 = results.get(5);
-      productList.add(new Product(recognition5.getTitle(), String.format("%.2f", (100 * recognition5.getConfidence()))+"%"));
+      productList.add(new Product(recognition5.getTitle(), String.format("%.5f", (100 * recognition5.getConfidence()))+"%"));
       if (recognition5 != null && recognition5.getConfidence() > 0.5) {
         resultRecognition = resultRecognition + "\n";
         if (recognition5.getTitle() != null)
@@ -137,7 +138,7 @@ public class SearchEngine {
           resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition5.getConfidence())) + "%";
       }
       Classifier.Recognition recognition6 = results.get(6);
-      productList.add(new Product(recognition6.getTitle(), String.format("%.2f", (100 * recognition6.getConfidence()))+"%"));
+      productList.add(new Product(recognition6.getTitle(), String.format("%.5f", (100 * recognition6.getConfidence()))+"%"));
       if (recognition6 != null && recognition6.getConfidence() > 0.5) {
         resultRecognition = resultRecognition + "\n";
         if (recognition6.getTitle() != null)
@@ -146,7 +147,7 @@ public class SearchEngine {
           resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition6.getConfidence())) + "%";
       }
       Classifier.Recognition recognition7 = results.get(7);
-      productList.add(new Product(recognition7.getTitle(), String.format("%.2f", (100 * recognition7.getConfidence()))+"%"));
+      productList.add(new Product(recognition7.getTitle(), String.format("%.5f", (100 * recognition7.getConfidence()))+"%"));
       if (recognition7 != null && recognition7.getConfidence() > 0.5) {
         resultRecognition = resultRecognition + "\n";
         if (recognition7.getTitle() != null)
@@ -167,6 +168,16 @@ public class SearchEngine {
     List<Product> productList = new ArrayList<>();
     showResultsInBottomSheet(results, productList);
     listener.onSearchCompleted(object, productList, resultRecognition);
+  }
+
+  public void predict(Activity activity, Bitmap bitmap, SearchResultListener listener) throws IOException {
+    sensorOrientation = 90 - getScreenOrientation(activity);
+    classifier = Classifier.create(activity, Model.MULTI_LABEL_MODEL, Device.CPU, 2);
+    final List<Classifier.Recognition> results = classifier.recognizeImage(bitmap, sensorOrientation);
+    List<Product> productList = new ArrayList<>();
+    showResultsInBottomSheet(results, productList);
+    Log.d(TAG, "in predict result:"+resultRecognition);
+    listener.onSearchCompleted(productList, resultRecognition);
   }
 
   private static JsonObjectRequest createRequest(DetectedObject searchingObject) throws Exception {
