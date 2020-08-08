@@ -19,6 +19,7 @@ package com.azhariharisalhamdi.ODIR5K;
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.RectF;
@@ -88,7 +89,7 @@ public class LiveObjectDetectionActivity extends AppCompatActivity implements On
   protected ImageView bottomSheetArrowImageView;
   private boolean slidingSheetUpFromHiddenState;
 
-  public String title_buttom_sheet = "Multiple Diagnosis Prediction";
+  public String title_buttom_sheet;
 
   static {
     if (!OpenCVLoader.initDebug()) {
@@ -109,6 +110,9 @@ public class LiveObjectDetectionActivity extends AppCompatActivity implements On
     graphicOverlay = findViewById(R.id.camera_preview_graphic_overlay);
     graphicOverlay.setOnClickListener(this);
     cameraSource = new CameraSource(graphicOverlay);
+
+    Resources res = getResources();
+    title_buttom_sheet = res.getString(R.string.diagnosis_predictions);
 
     promptChip = findViewById(R.id.bottom_prompt_chip);
     promptChipAnimator =

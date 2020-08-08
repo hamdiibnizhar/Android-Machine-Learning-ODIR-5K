@@ -303,44 +303,10 @@ public abstract class Classifier {
     return imageSizeY;
   }
 
-  public Bitmap processCLAHE(Bitmap mbitmap){
-    int w = mbitmap.getWidth();
-    int h = mbitmap.getHeight();
-    Mat mMat = new Mat(h,w, CvType.CV_8UC3);
-    Mat labImage = new Mat(h,w, CvType.CV_8UC3);
-    Bitmap tempBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
-    Utils.bitmapToMat(mbitmap, mMat);
-
-    Imgproc.cvtColor(mMat, labImage, Imgproc.COLOR_BGR2Lab,3);
-
-    java.util.List<Mat> Lab = new ArrayList<Mat>();
-
-    Core.split(labImage,Lab);
-    Mat L = Lab.get(0); // L,a,b are references, not copies
-    Mat a = Lab.get(1);
-    Mat b = Lab.get(2);
-
-    CLAHE ce = Imgproc.createCLAHE();
-    ce.setClipLimit(20);
-    ce.setTilesGridSize(new Size(10, 10));
-    ce.apply(L, L);
-
-    Core.merge(new ArrayList<>(Arrays.asList(L, a, b)),labImage);
-    Imgproc.cvtColor(labImage,mMat,Imgproc.COLOR_Lab2BGR);
-    Utils.matToBitmap(mMat, tempBitmap);
-    return tempBitmap;
-  }
-
   /** Loads input image, and applies preprocessing. */
   private TensorImage loadImage(final Bitmap bitmap, int sensorOrientation) {
   //// Loads bitmap into a TensorImage.
-    if(mModel == Model.MULTI_LABEL_MODEL) {
-      inputImageBuffer.load(processCLAHE(bitmap));
-    } else
-    {
-      inputImageBuffer.load(bitmap);
-    }
-
+    inputImageBuffer.load(bitmap);
     // Creates processor for the TensorImage.
     int cropSize = Math.min(bitmap.getWidth(), bitmap.getHeight());
     int numRotation = sensorOrientation / 90;
@@ -350,7 +316,7 @@ public abstract class Classifier {
             .add(new ResizeWithCropOrPadOp(cropSize, cropSize))
             .add(new ResizeOp(imageSizeX, imageSizeY, ResizeMethod.NEAREST_NEIGHBOR))
             .add(new Rot90Op(numRotation))
-            .add(getPreprocessNormalizeOp())
+//            .add(getPreprocessNormalizeOp())
             .build();
     return imageProcessor.process(inputImageBuffer);
   }

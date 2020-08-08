@@ -51,6 +51,8 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.azhariharisalhamdi.ODIR5K.imageprocessing.ImageProcessing;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
@@ -129,6 +131,7 @@ public abstract class CameraActivity extends AppCompatActivity
   private int numThreads = -1;
 
   private Bitmap mrgbBitmap;
+  private ImageProcessing imageProcessing;
 
   String resultRecognition;
 
@@ -145,6 +148,8 @@ public abstract class CameraActivity extends AppCompatActivity
     } else {
       requestPermission();
     }
+
+    imageProcessing = new ImageProcessing();
 
     threadsTextView = findViewById(R.id.threads);
     plusImageView = findViewById(R.id.plus);
@@ -277,7 +282,9 @@ public abstract class CameraActivity extends AppCompatActivity
             if(Model.MULTI_LABEL_MODEL == getModel()) {
               mrgbBitmap = Bitmap.createBitmap(previewWidth, previewHeight, Bitmap.Config.ARGB_8888);
               mrgbBitmap.setPixels(rgbBytes, 0, previewWidth, 0, 0, previewWidth, previewHeight);
-              mrgbBitmap = processCLAHE(mrgbBitmap);
+              imageProcessing.setBitmapImage(mrgbBitmap);
+              imageProcessing.processGammaHE(0.7, 1.3,20, 10,10);
+              mrgbBitmap = imageProcessing.getBitmapImage();
               mrgbBitmap.getPixels(rgbBytes, 0, previewWidth, 0, 0, previewWidth, previewHeight);
             }
           }
@@ -292,34 +299,6 @@ public abstract class CameraActivity extends AppCompatActivity
           }
         };
     processImage();
-  }
-
-  public Bitmap processCLAHE(Bitmap mbitmap){
-    int w = mbitmap.getWidth();
-    int h = mbitmap.getHeight();
-    Mat mMat = new Mat(w,h, CvType.CV_8UC3);
-    Mat labImage = new Mat(w,h, CvType.CV_8UC3);
-    Bitmap tempBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
-    Utils.bitmapToMat(mbitmap, mMat);
-
-    Imgproc.cvtColor(mMat, labImage, Imgproc.COLOR_BGR2Lab,3);
-
-    java.util.List<Mat> Lab = new ArrayList<Mat>();
-
-    Core.split(labImage,Lab);
-    Mat L = Lab.get(0); // L,a,b are references, not copies
-    Mat a = Lab.get(1);
-    Mat b = Lab.get(2);
-
-    CLAHE ce = Imgproc.createCLAHE();
-    ce.setClipLimit(20);
-    ce.setTilesGridSize(new org.opencv.core.Size(10, 10));
-    ce.apply(L, L);
-
-    Core.merge(new ArrayList<>(Arrays.asList(L, a, b)),labImage);
-    Imgproc.cvtColor(labImage,mMat,Imgproc.COLOR_Lab2BGR);
-    Utils.matToBitmap(mMat, tempBitmap);
-    return tempBitmap;
   }
 
   /** Callback for Camera2 API */
@@ -368,7 +347,9 @@ public abstract class CameraActivity extends AppCompatActivity
               if(Model.MULTI_LABEL_MODEL == getModel()) {
                 mrgbBitmap = Bitmap.createBitmap(previewWidth, previewHeight, Bitmap.Config.ARGB_8888);
                 mrgbBitmap.setPixels(rgbBytes, 0, previewWidth, 0, 0, previewWidth, previewHeight);
-                mrgbBitmap = processCLAHE(mrgbBitmap);
+                imageProcessing.setBitmapImage(mrgbBitmap);
+                imageProcessing.processGammaHE(0.7, 1.3,20, 10,10);
+                mrgbBitmap = imageProcessing.getBitmapImage();
                 mrgbBitmap.getPixels(rgbBytes, 0, previewWidth, 0, 0, previewWidth, previewHeight);
               }
             }
@@ -433,6 +414,7 @@ public abstract class CameraActivity extends AppCompatActivity
   @Override
   public synchronized void onDestroy() {
     LOGGER.d("onDestroy " + this);
+    imageProcessing.close();
     super.onDestroy();
   }
 
@@ -635,26 +617,9 @@ public abstract class CameraActivity extends AppCompatActivity
           if (recognition.getConfidence() != null)
             resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition.getConfidence())) + "%";
         }
-//        Recognition recognition1 = results.get(1);
-//        if (recognition1 != null) {
-//          resultRecognition = resultRecognition + "\n";
-//          if (recognition1.getTitle() != null)
-//            resultRecognition = resultRecognition + recognition1.getTitle();
-//          if (recognition1.getConfidence() != null)
-//            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition1.getConfidence())) + "%";
-//        }
-//        Recognition recognition2 = results.get(2);
-//        if (recognition2 != null) {
-//          resultRecognition = resultRecognition + "\n";
-//          if (recognition2.getTitle() != null)
-//            resultRecognition = resultRecognition + recognition2.getTitle();
-//          if (recognition2.getConfidence() != null)
-//            resultRecognition = resultRecognition + " " + String.format("%.2f", (100 * recognition2.getConfidence())) + "%";
-//        }
       }
       resultRecognitionTextView.setText(resultRecognition);
     }
-//      else {
     if (Model.MULTI_LABEL_MODEL == getModel()) {
       resultRecognition = "";
       if (results != null && results.size() >= 3) {

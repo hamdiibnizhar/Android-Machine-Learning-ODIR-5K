@@ -23,6 +23,8 @@ import android.graphics.Rect;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import androidx.annotation.Nullable;
+
+import com.azhariharisalhamdi.ODIR5K.imageprocessing.ImageProcessing;
 import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import com.google.firebase.ml.vision.objects.FirebaseVisionObject;
 
@@ -51,6 +53,7 @@ public class DetectedObject {
   private final FirebaseVisionObject object;
   private final int objectIndex;
   private final FirebaseVisionImage image;
+  private ImageProcessing imageProcessing;
 
   @Nullable
   private Bitmap bitmap = null;
@@ -98,36 +101,10 @@ public class DetectedObject {
               boundingBox.width(),
               boundingBox.height());
     }
-    bitmap = processCLAHE(bitmap);
+    imageProcessing = new ImageProcessing(bitmap);
+    imageProcessing.processGammaHE(0.7, 1.3,20, 10,10);
+    bitmap = imageProcessing.getBitmapImage();
     return bitmap;
-  }
-
-  public Bitmap processCLAHE(Bitmap mbitmap){
-    int w = mbitmap.getWidth();
-    int h = mbitmap.getHeight();
-    Mat mMat = new Mat(h,w, CvType.CV_8UC4);
-    Mat labImage = new Mat(h,w, CvType.CV_8UC4);
-    Bitmap tempBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
-    org.opencv.android.Utils.bitmapToMat(mbitmap, mMat);
-
-    Imgproc.cvtColor(mMat, labImage, Imgproc.COLOR_BGR2Lab,3);
-
-    java.util.List<Mat> Lab = new ArrayList<Mat>();
-
-    Core.split(labImage,Lab);
-    Mat L = Lab.get(0); // L,a,b are references, not copies
-    Mat a = Lab.get(1);
-    Mat b = Lab.get(2);
-
-    CLAHE ce = Imgproc.createCLAHE();
-    ce.setClipLimit(20);
-    ce.setTilesGridSize(new Size(10, 10));
-    ce.apply(L, L);
-
-    Core.merge(new ArrayList<>(Arrays.asList(L, a, b)),labImage);
-    Imgproc.cvtColor(labImage,mMat,Imgproc.COLOR_Lab2BGR);
-    org.opencv.android.Utils.matToBitmap(mMat, tempBitmap);
-    return tempBitmap;
   }
 
   @Nullable

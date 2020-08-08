@@ -40,6 +40,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.azhariharisalhamdi.ODIR5K.imageprocessing.ImageProcessing;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.chip.Chip;
 import com.google.common.collect.ImmutableList;
@@ -102,10 +104,11 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
 
   private FirebaseVisionObjectDetector detector;
   private SearchEngine searchEngine;
+  private ImageProcessing imageProcessing;
 
   public boolean object_detection_mode = false;
 
-  public String title_buttom_sheet = "Multi-Label Prediction Diagnosis";
+  public String title_buttom_sheet;
 
   static {
     if (!OpenCVLoader.initDebug()) {
@@ -128,7 +131,10 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
     loadingView = findViewById(R.id.loading_view);
     loadingView.setOnClickListener(this);
     inputImageView = findViewById(R.id.input_image_view);
-      bottomSheetArrowImageView = findViewById(R.id.bottom_sheet_arrow);
+    bottomSheetArrowImageView = findViewById(R.id.bottom_sheet_arrow);
+
+    Resources res = getResources();
+    title_buttom_sheet = res.getString(R.string.diagnosis_predictions);
 
     if(object_detection_mode) {
       bottomPromptChip = findViewById(R.id.bottom_prompt_chip);
@@ -181,6 +187,7 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
         Log.e(TAG, "Failed to close the detector!", e);
       }
     }
+    imageProcessing.close();
     searchEngine.shutdown();
   }
 
@@ -233,34 +240,6 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
     }
   }
 
-    public Bitmap processCLAHE(Bitmap mbitmap){
-        int w = mbitmap.getWidth();
-        int h = mbitmap.getHeight();
-        Mat mMat = new Mat(h,w, CvType.CV_8UC4);
-        Mat labImage = new Mat(h,w, CvType.CV_8UC4);
-        Bitmap tempBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
-        org.opencv.android.Utils.bitmapToMat(mbitmap, mMat);
-
-        Imgproc.cvtColor(mMat, labImage, Imgproc.COLOR_BGR2Lab,3);
-
-        java.util.List<Mat> Lab = new ArrayList<Mat>();
-
-        Core.split(labImage,Lab);
-        Mat L = Lab.get(0); // L,a,b are references, not copies
-        Mat a = Lab.get(1);
-        Mat b = Lab.get(2);
-
-        CLAHE ce = Imgproc.createCLAHE();
-        ce.setClipLimit(20);
-        ce.setTilesGridSize(new Size(10, 10));
-        ce.apply(L, L);
-
-        Core.merge(new ArrayList<>(Arrays.asList(L, a, b)),labImage);
-        Imgproc.cvtColor(labImage,mMat,Imgproc.COLOR_Lab2BGR);
-        org.opencv.android.Utils.matToBitmap(mMat, tempBitmap);
-        return tempBitmap;
-    }
-
   @Override
   public void onPreviewCardClicked(SearchedObject searchedObject) {
     showSearchResults(searchedObject);
@@ -286,7 +265,7 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
         bottomSheetPredictionview.setText(results);
         productRecyclerView.setAdapter(new ProductAdapter(productList));
         int line_count = results.split("\n").length + 1;
-        int peekHeight = line_count > 1 ? 150 + line_count*50 : 150;
+        int peekHeight = line_count > 1 ? 155 + line_count*50 : 155;
         bottomSheetBehavior.setPeekHeight(peekHeight);
         bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
     }
@@ -366,7 +345,9 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
     currentSelectedObjectIndex = 0;
     try {
         inputBitmap = Utils.loadImage(this, imageUri, MAX_IMAGE_DIMENSION);
-        inputBitmap = processCLAHE(inputBitmap);
+        imageProcessing = new ImageProcessing(inputBitmap);
+        imageProcessing.processGammaHE(0.7, 1.3,20, 10,10);
+        inputBitmap = imageProcessing.getBitmapImage();
     } catch (IOException e) {
       Log.e(TAG, "Failed to load file: " + imageUri, e);
       showBottomPromptChip("Failed to load file!");
@@ -389,17 +370,20 @@ public class StaticObjectDetectionActivity extends AppCompatActivity
         productRecyclerView.clearOnScrollListeners();
         try {
             inputBitmap = Utils.loadImage(this, imageUri, MAX_IMAGE_DIMENSION);
+            imageProcessing = new ImageProcessing(inputBitmap);
+            imageProcessing.getMatCropCenter();
+            imageProcessing.processGammaHE(0.8, 1.2,20, 10,10);
+            inputBitmap = imageProcessing.getBitmapImage();
         } catch (IOException e) {
             Log.e(TAG, "Failed to load file: " + imageUri, e);
             showBottomPromptChip("Failed to load file!");
             return;
         }
 
-        inputBitmap = processCLAHE(inputBitmap);
         Log.d(TAG, "in diagnosePict");
         inputImageView.setImageBitmap(inputBitmap);
         loadingView.setVisibility(View.VISIBLE);
-        searchEngine.predict(this, inputBitmap, /* listener= */ this);
+        searchEngine.predict(this, inputBitmap,this);
     }
 
   @MainThread
